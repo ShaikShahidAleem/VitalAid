@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799297332834",
+    "project_id": "vital-aid-app",
+    "storage_bucket": "vital-aid-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799297332834:android:5421951a6ba3d852a7133b",
+        "android_client_info": {
+          "package_name": "in.vitalaid.vitalaid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCClyPZN6PSX2eEMkAHF9DOl5dju64b0do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
