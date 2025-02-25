@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'home_page.dart';
+import 'email_verification_screen.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -41,6 +41,9 @@ class _RegisterPageState extends State<RegisterPage> {
         password: _passwordController.text.trim(),
       );
 
+      // Send email verification
+      await userCredential.user!.sendEmailVerification();
+
       // Save additional user details to Firestore
       await FirebaseFirestore.instance
           .collection('users')
@@ -52,31 +55,36 @@ class _RegisterPageState extends State<RegisterPage> {
         'addressLine1': _addressLine1Controller.text.trim(),
         'addressLine2': _addressLine2Controller.text.trim(),
         'registrationDate': DateTime.now().toIso8601String(),
+        'emailVerified': false,
       });
 
       // Force Firebase to refresh authentication state
       await FirebaseAuth.instance.currentUser?.reload();
 
+      // Navigate to Email Verification Screen
       if (mounted) {
-        // Navigate to Home Page using pushReplacement
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => EmailVerificationScreen()),
         );
       }
     } on FirebaseAuthException catch (e) {
-      String errorMessage = 'An error occurred during registration';
+      String errorMessage = "An error occurred during registration";
       if (e.code == 'weak-password') {
         errorMessage = 'The password provided is too weak.';
       } else if (e.code == 'email-already-in-use') {
         errorMessage = 'An account already exists for that email.';
+      } else if (e.code == 'invalid-email') {
+        errorMessage = 'The email address is not valid.';
       }
       
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(errorMessage)),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(errorMessage)),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Registration failed: $e")),
+      );
     } finally {
       if (mounted) {
         setState(() {
@@ -85,7 +93,6 @@ class _RegisterPageState extends State<RegisterPage> {
       }
     }
   }
-
 
   @override
   void dispose() {
@@ -120,40 +127,36 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(height: 8),
                   TextField(
                     controller: _emailController,
-                    decoration:
-                        const InputDecoration(labelText: 'Email Address'),
+                    decoration: const InputDecoration(labelText: 'Email Address'),
+                    keyboardType: TextInputType.emailAddress,
                   ),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _passwordController,
                     obscureText: true,
-                    decoration:
-                        const InputDecoration(labelText: 'Password'),
+                    decoration: const InputDecoration(labelText: 'Password'),
                   ),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _confirmPasswordController,
                     obscureText: true,
-                    decoration:
-                        const InputDecoration(labelText: 'Confirm Password'),
+                    decoration: const InputDecoration(labelText: 'Confirm Password'),
                   ),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _phoneNumberController,
-                    decoration:
-                        const InputDecoration(labelText: 'Phone Number'),
+                    decoration: const InputDecoration(labelText: 'Phone Number'),
+                    keyboardType: TextInputType.phone,
                   ),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _addressLine1Controller,
-                    decoration:
-                        const InputDecoration(labelText: 'Address Line 1'),
+                    decoration: const InputDecoration(labelText: 'Address Line 1'),
                   ),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _addressLine2Controller,
-                    decoration:
-                        const InputDecoration(labelText: 'Address Line 2'),
+                    decoration: const InputDecoration(labelText: 'Address Line 2'),
                   ),
                   const SizedBox(height: 16),
                   ElevatedButton(
@@ -167,8 +170,7 @@ class _RegisterPageState extends State<RegisterPage> {
           if (_isLoading)
             Container(
               color: Colors.black.withOpacity(0.5),
-              child:
-                  const Center(child: CircularProgressIndicator()), // Loading spinner
+              child: const Center(child: CircularProgressIndicator()),
             ),
         ],
       ),
