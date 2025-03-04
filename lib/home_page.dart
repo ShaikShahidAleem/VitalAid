@@ -1,12 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:vitalaid/medical_records_page.dart';
 import 'package:vitalaid/welcome_page.dart';
 import 'profile_page.dart';
+import 'procedure_detail_screen.dart';
+import 'procedure_search_delegate.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final user = FirebaseAuth.instance.currentUser!;
+  List<Map<String, dynamic>> procedures = [];
+  bool isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    fetchProcedures();
+  }
+
+  Future<void> fetchProcedures() async {
+    try {
+      final querySnapshot = await FirebaseFirestore.instance.collection('first_aid_procedures').get();
+      setState(() {
+        procedures = querySnapshot.docs.map((doc) {
+          final data = doc.data();
+          data['id'] = doc.id;
+          return data;
+        }).toList();
+        isLoading = false;
+      });
+    } catch (e) {
+      print("Error fetching procedures: $e");
+      setState(() {
+        isLoading = false;
+      });
+    }
+  }
 
   void signUserOut(BuildContext context) async {
     try {
@@ -22,25 +58,33 @@ class HomePage extends StatelessWidget {
     }
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false, // Removes default back button
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             Expanded(
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: 'Search...',
-                  prefixIcon: const Icon(Icons.search),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide.none,
+              child: GestureDetector(
+                onTap: () {
+                  showSearch(
+                    context: context,
+                    delegate: ProcedureSearchDelegate(procedures),
+                  );
+                },
+                child: TextField(
+                  enabled: false,
+                  decoration: InputDecoration(
+                    hintText: 'Search...',
+                    prefixIcon: const Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide.none,
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
-                  filled: true,
-                  fillColor: Colors.white,
                 ),
               ),
             ),
@@ -62,61 +106,76 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.blueAccent,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Section for Major First Aid Procedures
-            const Text(
-              'Major First Aid Procedures',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            Wrap(
-              spacing: 10,
-              runSpacing: 10,
-              children: List.generate(6, (index) {
-                return ElevatedButton(
-                  onPressed: () {}, // Non-functional for now
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(100, 100),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Major First Aid Procedures',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  Expanded(
+                    child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        childAspectRatio: 1.5,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
+                      ),
+                      itemCount: procedures.length,
+                      itemBuilder: (context, index) {
+                        final procedure = procedures[index];
+                        return ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ProcedureDetailScreen(procedure),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Text(
+                            procedure['name'],
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        );
+                      },
                     ),
                   ),
-                  child: Text('Procedure ${index + 1}'),
-                );
-              }),
-            ),
-            const SizedBox(height: 20),
-
-            // Section for Additional Features
-            const Text(
-              'Additional Features',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            Wrap(
-              spacing: 10,
-              runSpacing: 10,
-              children: List.generate(4, (index) {
-                return ElevatedButton.icon(
-                  onPressed: () {}, // Non-functional for now
-                  icon: const Icon(Icons.featured_play_list),
-                  label: Text('Feature ${index + 1}'),
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(150, 50),
-                    shape:
-                        RoundedRectangleBorder(borderRadius:
-                        BorderRadius.circular(8)),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Additional Features',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                );
-              }),
+                  const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 10,
+                    runSpacing: 10,
+                    children: List.generate(4, (index) {
+                      return ElevatedButton.icon(
+                        onPressed: () {},
+                        icon: const Icon(Icons.featured_play_list),
+                        label: Text('Feature ${index + 1}'),
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: const Size(150, 50),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                        ),
+                      );
+                    }),
+                  ),
+                ],
+              ),
             ),
-          ],
-        ),
-      ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -133,21 +192,20 @@ class HomePage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              // Home Button
               IconButton(
                 icon: const Icon(Icons.home),
-                onPressed: () {
-                  // Already on home page
-                },
+                onPressed: () {},
               ),
-              // Placeholder Icon 1
+              // Add this to your home_page.dart, in the bottomNavigationBar section
               IconButton(
                 icon: const Icon(Icons.medical_services),
                 onPressed: () {
-                  // Functionality to be added later
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MedicalRecordsPage()),
+                  );
                 },
               ),
-              // SOS/Emergency Alert Button
               Container(
                 decoration: BoxDecoration(
                   color: Colors.red,
@@ -158,24 +216,16 @@ class HomePage extends StatelessWidget {
                     Icons.warning_rounded,
                     color: Colors.white,
                   ),
-                  onPressed: () {
-                    // Emergency alert functionality to be added
-                  },
+                  onPressed: () {},
                 ),
               ),
-              // Placeholder Icon 2
               IconButton(
                 icon: const Icon(Icons.health_and_safety),
-                onPressed: () {
-                  // Functionality to be added later
-                },
+                onPressed: () {},
               ),
-              // Placeholder Icon 3
               IconButton(
                 icon: const Icon(Icons.person_add),
-                onPressed: () {
-                  // Functionality to be added later
-                },
+                onPressed: () {},
               ),
             ],
           ),
