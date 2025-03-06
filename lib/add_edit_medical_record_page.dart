@@ -11,10 +11,12 @@ class AddEditMedicalRecordPage extends StatefulWidget {
   final String? recordId;
   final Map<String, dynamic>? record;
 
-  AddEditMedicalRecordPage({Key? key, this.recordId, this.record}) : super(key: key);
+  AddEditMedicalRecordPage({Key? key, this.recordId, this.record})
+      : super(key: key);
 
   @override
-  _AddEditMedicalRecordPageState createState() => _AddEditMedicalRecordPageState();
+  _AddEditMedicalRecordPageState createState() =>
+      _AddEditMedicalRecordPageState();
 }
 
 class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
@@ -35,10 +37,14 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   @override
   void initState() {
     super.initState();
-    _checkupDateController = TextEditingController(text: widget.record?['checkupDate'] ?? '');
-    _doctorConsultedController = TextEditingController(text: widget.record?['doctorConsulted'] ?? '');
-    _prescriptionOfferedController = TextEditingController(text: widget.record?['prescriptionOffered'] ?? '');
-    _testResultsController = TextEditingController(text: widget.record?['testResults'] ?? '');
+    _checkupDateController = TextEditingController(
+        text: widget.record?['checkupDate'] ?? '');
+    _doctorConsultedController = TextEditingController(
+        text: widget.record?['doctorConsulted'] ?? '');
+    _prescriptionOfferedController = TextEditingController(
+        text: widget.record?['prescriptionOffered'] ?? '');
+    _testResultsController =
+        TextEditingController(text: widget.record?['testResults'] ?? '');
   }
 
   @override
@@ -70,7 +76,8 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
     if (images != null) {
       setState(() {
         if (field == 'prescription') {
-          _prescriptionImages.addAll(images.map((image) => File(image.path)));
+          _prescriptionImages
+              .addAll(images.map((image) => File(image.path)));
         } else {
           _testResultsImages.addAll(images.map((image) => File(image.path)));
         }
@@ -114,7 +121,10 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   Future<List<String>> _uploadFiles(List<File> files) async {
     List<String> urls = [];
     for (var file in files) {
-      String fileName = DateTime.now().millisecondsSinceEpoch.toString() + '_' + file.path.split('/').last;
+      String fileName =
+          DateTime.now().millisecondsSinceEpoch.toString() +
+              '_' +
+              file.path.split('/').last;
       firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance
           .ref()
           .child('medical_records')
@@ -131,9 +141,11 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   Future<void> _saveRecord() async {
     if (_formKey.currentState!.validate()) {
       try {
-        List<String> prescriptionImageUrls = await _uploadFiles(_prescriptionImages);
+        List<String> prescriptionImageUrls =
+            await _uploadFiles(_prescriptionImages);
         List<String> prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs);
-        List<String> testResultsImageUrls = await _uploadFiles(_testResultsImages);
+        List<String> testResultsImageUrls =
+            await _uploadFiles(_testResultsImages);
         List<String> testResultsPdfUrls = await _uploadFiles(_testResultsPdfs);
 
         final data = {
@@ -148,10 +160,27 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
           'testResultsPdfUrls': testResultsPdfUrls,
         };
 
+        final String? uid = _auth.currentUser?.uid;
+        if (uid == null) {
+          // Handle the case where the user is not logged in.
+          return;
+        }
+
         if (widget.recordId != null) {
-          await _firestore.collection('medical_records').doc(widget.recordId).update(data);
+          // Updating existing record in user's subcollection
+          await _firestore
+              .collection('users')
+              .doc(uid)
+              .collection('medical_records')
+              .doc(widget.recordId)
+              .update(data);
         } else {
-          await _firestore.collection('medical_records').add(data);
+          // Adding a new record to user's subcollection
+          await _firestore
+              .collection('users')
+              .doc(uid)
+              .collection('medical_records')
+              .add(data);
         }
 
         Navigator.pop(context);
@@ -191,8 +220,10 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   }
 
   Widget _buildFilePreview(String field) {
-    List<File> images = field == 'prescription' ? _prescriptionImages : _testResultsImages;
-    List<File> pdfs = field == 'prescription' ? _prescriptionPdfs : _testResultsPdfs;
+    List<File> images =
+        field == 'prescription' ? _prescriptionImages : _testResultsImages;
+    List<File> pdfs =
+        field == 'prescription' ? _prescriptionPdfs : _testResultsPdfs;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -207,7 +238,8 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.only(right: 8.0),
-                child: Image.file(images[index], width: 100, height: 100, fit: BoxFit.cover),
+                child: Image.file(images[index],
+                    width: 100, height: 100, fit: BoxFit.cover),
               );
             },
           ),
@@ -227,7 +259,8 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.recordId == null ? 'Add Medical Record' : 'Edit Medical Record'),
+        title: Text(
+            widget.recordId == null ? 'Add Medical Record' : 'Edit Medical Record'),
       ),
       body: SingleChildScrollView(
         child: Padding(

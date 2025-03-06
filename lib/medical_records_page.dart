@@ -8,8 +8,15 @@ class MedicalRecordsPage extends StatelessWidget {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<void> _deleteRecord(BuildContext context, String recordId) async {
+    final User? user = _auth.currentUser;
+    final String? uid = user?.uid;
     try {
-      await _firestore.collection('medical_records').doc(recordId).delete();
+      await _firestore
+          .collection('users')
+          .doc(uid)
+          .collection('medical_records')
+          .doc(recordId)
+          .delete();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Record deleted successfully')),
       );
@@ -37,8 +44,9 @@ class MedicalRecordsPage extends StatelessWidget {
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: _firestore
+            .collection('users')
+            .doc(uid)
             .collection('medical_records')
-            .where('userId', isEqualTo: uid)
             .snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
