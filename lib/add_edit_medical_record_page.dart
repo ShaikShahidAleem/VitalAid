@@ -63,10 +63,11 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
       firstDate: DateTime(2000),
       lastDate: DateTime(2101),
     );
-    if (picked != null)
+    if (picked != null) {
       setState(() {
         _checkupDateController.text = DateFormat('dd-MM-yyyy').format(picked);
       });
+    }
   }
 
   Future<void> _pickImages(String field) async {
@@ -107,55 +108,49 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
       allowMultiple: true,
     );
 
-    if (result != null) {
+    if (result != null && result.files.isNotEmpty) {
       setState(() {
         if (field == 'prescription') {
-          _prescriptionPdfs.addAll(result.paths.map((path) => File(path!)));
+          _prescriptionPdfs.addAll(result.files
+              .where((file) => file.path != null)
+              .map((file) => File(file.path!)));
         } else {
-          _testResultsPdfs.addAll(result.paths.map((path) => File(path!)));
+          _testResultsPdfs.addAll(result.files
+              .where((file) => file.path != null)
+              .map((file) => File(file.path!)));
         }
       });
     }
   }
 
-  Future<List<String>> _uploadFiles(List<File> files) async {
+  Future<List<String>> _uploadFiles(List<File> files, String folderName) async {
     List<String> urls = [];
-    
-    if (files.isEmpty) {
-      return urls; // Return empty list if no files to upload
-    }
-    
+
+    if (files.isEmpty) return urls;
+
     try {
       for (var file in files) {
-        // Create a unique filename
-        String fileName = DateTime.now().millisecondsSinceEpoch.toString() + 
-                        '_' + file.path.split('/').last;
-        
-        // Create a reference to the location you want to upload to in Firebase Storage
+        String fileName = '${DateTime.now().millisecondsSinceEpoch}_${file.path.split('/').last}';
+
         firebase_storage.Reference storageRef = firebase_storage.FirebaseStorage.instance
             .ref()
             .child('users')
             .child(_auth.currentUser!.uid)
-            .child('medical_records')
+            .child(folderName)
             .child(fileName);
-        
-        // Upload the file
+
         firebase_storage.UploadTask uploadTask = storageRef.putFile(file);
-        
-        // Wait for the upload to complete
-        await uploadTask;
-        
-        // Get the download URL
-        String downloadUrl = await storageRef.getDownloadURL();
-        urls.add(downloadUrl);
+
+        await uploadTask.whenComplete(() async {
+          String downloadUrl = await storageRef.getDownloadURL();
+          urls.add(downloadUrl);
+        });
       }
-      return urls;
     } catch (e) {
       print("Error uploading files: $e");
-      throw e; // Re-throw to be caught by the caller
     }
+    return urls;
   }
-
 
   Future<void> _saveRecord() async {
     if (_formKey.currentState!.validate()) {
@@ -163,7 +158,7 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
         setState(() {
           // Show loading indicator
         });
-        
+
         final String? uid = _auth.currentUser?.uid;
         if (uid == null) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -171,35 +166,12 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
           );
           return;
         }
-        
+
         // Upload files and get URLs
-        List<String> prescriptionImageUrls = [];
-        List<String> prescriptionPdfUrls = [];
-        List<String> testResultsImageUrls = [];
-        List<String> testResultsPdfUrls = [];
-        
-        try {
-          if (_prescriptionImages.isNotEmpty) {
-            prescriptionImageUrls = await _uploadFiles(_prescriptionImages);
-          }
-          
-          if (_prescriptionPdfs.isNotEmpty) {
-            prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs);
-          }
-          
-          if (_testResultsImages.isNotEmpty) {
-            testResultsImageUrls = await _uploadFiles(_testResultsImages);
-          }
-          
-          if (_testResultsPdfs.isNotEmpty) {
-            testResultsPdfUrls = await _uploadFiles(_testResultsPdfs);
-          }
-        } catch (uploadError) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error uploading files: $uploadError')),
-          );
-          return;
-        }
+        List<String> prescriptionImageUrls = await _uploadFiles(_prescriptionImages, 'prescription_images');
+        List<String> prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs, 'prescription_pdfs');
+        List<String> testResultsImageUrls = await _uploadFiles(_testResultsImages, 'test_results_images');
+        List<String> testResultsPdfUrls = await _uploadFiles(_testResultsPdfs, 'test_results_pdfs');
 
         final data = {
           'userId': uid,
@@ -216,19 +188,10 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
 
         if (widget.recordId != null) {
           // Updating existing record
-          await _firestore
-              .collection('users')
-              .doc(uid)
-              .collection('medical_records')
-              .doc(widget.recordId)
-              .update(data);
+          await _firestore.collection('users').doc(uid).collection('medical_records').doc(widget.recordId).update(data);
         } else {
           // Adding a new record
-          await _firestore
-              .collection('users')
-              .doc(uid)
-              .collection('medical_records')
-              .add(data);
+          await _firestore.collection('users').doc(uid).collection('medical_records').add(data);
         }
 
         Navigator.pop(context);
@@ -247,7 +210,6 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
       }
     }
   }
-
 
   Widget _buildFileSelectionButtons(String field) {
     return SingleChildScrollView(
