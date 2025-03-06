@@ -120,36 +120,89 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
 
   Future<List<String>> _uploadFiles(List<File> files) async {
     List<String> urls = [];
-    for (var file in files) {
-      String fileName =
-          DateTime.now().millisecondsSinceEpoch.toString() +
-              '_' +
-              file.path.split('/').last;
-      firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance
-          .ref()
-          .child('medical_records')
-          .child(_auth.currentUser!.uid)
-          .child(fileName);
-
-      await ref.putFile(file);
-      String downloadUrl = await ref.getDownloadURL();
-      urls.add(downloadUrl);
+    
+    if (files.isEmpty) {
+      return urls; // Return empty list if no files to upload
     }
-    return urls;
+    
+    try {
+      for (var file in files) {
+        // Create a unique filename
+        String fileName = DateTime.now().millisecondsSinceEpoch.toString() + 
+                        '_' + file.path.split('/').last;
+        
+        // Create a reference to the location you want to upload to in Firebase Storage
+        firebase_storage.Reference storageRef = firebase_storage.FirebaseStorage.instance
+            .ref()
+            .child('users')
+            .child(_auth.currentUser!.uid)
+            .child('medical_records')
+            .child(fileName);
+        
+        // Upload the file
+        firebase_storage.UploadTask uploadTask = storageRef.putFile(file);
+        
+        // Wait for the upload to complete
+        await uploadTask;
+        
+        // Get the download URL
+        String downloadUrl = await storageRef.getDownloadURL();
+        urls.add(downloadUrl);
+      }
+      return urls;
+    } catch (e) {
+      print("Error uploading files: $e");
+      throw e; // Re-throw to be caught by the caller
+    }
   }
+
 
   Future<void> _saveRecord() async {
     if (_formKey.currentState!.validate()) {
       try {
-        List<String> prescriptionImageUrls =
-            await _uploadFiles(_prescriptionImages);
-        List<String> prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs);
-        List<String> testResultsImageUrls =
-            await _uploadFiles(_testResultsImages);
-        List<String> testResultsPdfUrls = await _uploadFiles(_testResultsPdfs);
+        setState(() {
+          // Show loading indicator
+        });
+        
+        final String? uid = _auth.currentUser?.uid;
+        if (uid == null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('User not logged in')),
+          );
+          return;
+        }
+        
+        // Upload files and get URLs
+        List<String> prescriptionImageUrls = [];
+        List<String> prescriptionPdfUrls = [];
+        List<String> testResultsImageUrls = [];
+        List<String> testResultsPdfUrls = [];
+        
+        try {
+          if (_prescriptionImages.isNotEmpty) {
+            prescriptionImageUrls = await _uploadFiles(_prescriptionImages);
+          }
+          
+          if (_prescriptionPdfs.isNotEmpty) {
+            prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs);
+          }
+          
+          if (_testResultsImages.isNotEmpty) {
+            testResultsImageUrls = await _uploadFiles(_testResultsImages);
+          }
+          
+          if (_testResultsPdfs.isNotEmpty) {
+            testResultsPdfUrls = await _uploadFiles(_testResultsPdfs);
+          }
+        } catch (uploadError) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error uploading files: $uploadError')),
+          );
+          return;
+        }
 
         final data = {
-          'userId': _auth.currentUser!.uid,
+          'userId': uid,
           'checkupDate': _checkupDateController.text,
           'doctorConsulted': _doctorConsultedController.text,
           'prescriptionOffered': _prescriptionOfferedController.text,
@@ -158,16 +211,11 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
           'prescriptionPdfUrls': prescriptionPdfUrls,
           'testResultsImageUrls': testResultsImageUrls,
           'testResultsPdfUrls': testResultsPdfUrls,
+          'timestamp': FieldValue.serverTimestamp(),
         };
 
-        final String? uid = _auth.currentUser?.uid;
-        if (uid == null) {
-          // Handle the case where the user is not logged in.
-          return;
-        }
-
         if (widget.recordId != null) {
-          // Updating existing record in user's subcollection
+          // Updating existing record
           await _firestore
               .collection('users')
               .doc(uid)
@@ -175,7 +223,7 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
               .doc(widget.recordId)
               .update(data);
         } else {
-          // Adding a new record to user's subcollection
+          // Adding a new record
           await _firestore
               .collection('users')
               .doc(uid)
@@ -188,12 +236,18 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
           SnackBar(content: Text('Record saved successfully')),
         );
       } catch (e) {
+        print("Error saving record: $e");
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving record: $e')),
         );
+      } finally {
+        setState(() {
+          // Hide loading indicator
+        });
       }
     }
   }
+
 
   Widget _buildFileSelectionButtons(String field) {
     return SingleChildScrollView(
