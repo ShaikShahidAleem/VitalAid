@@ -18,8 +18,9 @@ class _RegisterPageState extends State<RegisterPage> {
   final _phoneNumberController = TextEditingController();
   final _addressLine1Controller = TextEditingController();
   final _addressLine2Controller = TextEditingController();
-
   bool _isLoading = false;
+  bool _isPasswordVisible = false;
+  bool _isConfirmPasswordVisible = false;
 
   Future<void> register() async {
     if (_passwordController.text != _confirmPasswordController.text) {
@@ -34,17 +35,14 @@ class _RegisterPageState extends State<RegisterPage> {
     });
 
     try {
-      // Create user with email and password
       UserCredential userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
 
-      // Send email verification
       await userCredential.user!.sendEmailVerification();
 
-      // Save additional user details to Firestore
       await FirebaseFirestore.instance
           .collection('users')
           .doc(userCredential.user!.uid)
@@ -58,10 +56,8 @@ class _RegisterPageState extends State<RegisterPage> {
         'emailVerified': false,
       });
 
-      // Force Firebase to refresh authentication state
       await FirebaseAuth.instance.currentUser?.reload();
 
-      // Navigate to Email Verification Screen
       if (mounted) {
         Navigator.pushReplacement(
           context,
@@ -77,13 +73,9 @@ class _RegisterPageState extends State<RegisterPage> {
       } else if (e.code == 'invalid-email') {
         errorMessage = 'The email address is not valid.';
       }
-      
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(errorMessage)),
-      );
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Registration failed: $e")),
       );
     } finally {
       if (mounted) {
@@ -95,74 +87,65 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   @override
-  void dispose() {
-    // Dispose controllers to free up resources
-    _fullNameController.dispose();
-    _emailController.dispose();
-    _passwordController.dispose();
-    _confirmPasswordController.dispose();
-    _phoneNumberController.dispose();
-    _addressLine1Controller.dispose();
-    _addressLine2Controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Register'),
-      ),
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
+          // Background Image with Transparency
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.2, // Adjust transparency level
+              child: Align(
+                alignment: Alignment.bottomCenter, // Position at the bottom-left
+                child: Image.asset(
+                  'assets/blue_crosses.png',
+                  width: MediaQuery.of(context).size.width,
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+          ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TextField(
-                    controller: _fullNameController,
-                    decoration: const InputDecoration(labelText: 'Full Name'),
+                  const SizedBox(height: 60),
+                  const Text(
+                    "Hey there!\nRegister to get started!",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _emailController,
-                    decoration: const InputDecoration(labelText: 'Email Address'),
-                    keyboardType: TextInputType.emailAddress,
+                  const SizedBox(height: 90),
+                  _buildTextField(_fullNameController, "Enter your Full name"),
+                  _buildTextField(_emailController, "Enter your Email Address"),
+                  _buildTextField(_passwordController, "Password", isPassword: true),
+                  _buildTextField(
+                      _confirmPasswordController, "Confirm Password", isPassword: true),
+                  _buildTextField(
+                      _phoneNumberController, "Enter your phone number", keyboardType: TextInputType.phone),
+                  _buildTextField(_addressLine1Controller, "Address line 1"),
+                  _buildTextField(_addressLine2Controller, "Address line 2"),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    height: 50,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: register,
+                      child: const Text(
+                        "Register",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
+                    ),
                   ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _passwordController,
-                    obscureText: true,
-                    decoration: const InputDecoration(labelText: 'Password'),
-                  ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _confirmPasswordController,
-                    obscureText: true,
-                    decoration: const InputDecoration(labelText: 'Confirm Password'),
-                  ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _phoneNumberController,
-                    decoration: const InputDecoration(labelText: 'Phone Number'),
-                    keyboardType: TextInputType.phone,
-                  ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _addressLine1Controller,
-                    decoration: const InputDecoration(labelText: 'Address Line 1'),
-                  ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _addressLine2Controller,
-                    decoration: const InputDecoration(labelText: 'Address Line 2'),
-                  ),
-                  const SizedBox(height: 16),
-                  ElevatedButton(
-                    onPressed: register,
-                    child: const Text('Register'),
-                  ),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
@@ -173,6 +156,49 @@ class _RegisterPageState extends State<RegisterPage> {
               child: const Center(child: CircularProgressIndicator()),
             ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildTextField(
+    TextEditingController controller, 
+    String hint, 
+    {bool isPassword = false, TextInputType keyboardType = TextInputType.text}
+  ) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: TextField(
+        controller: controller,
+        obscureText: isPassword ? (controller == _passwordController ? !_isPasswordVisible : !_isConfirmPasswordVisible) : false,
+        keyboardType: keyboardType,
+        decoration: InputDecoration(
+          hintText: hint,
+          filled: true,
+          fillColor: Colors.grey[300],
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: BorderSide.none,
+          ),
+          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          suffixIcon: isPassword
+              ? IconButton(
+                  icon: Icon(
+                    controller == _passwordController
+                        ? (_isPasswordVisible ? Icons.visibility : Icons.visibility_off)
+                        : (_isConfirmPasswordVisible ? Icons.visibility : Icons.visibility_off),
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      if (controller == _passwordController) {
+                        _isPasswordVisible = !_isPasswordVisible;
+                      } else {
+                        _isConfirmPasswordVisible = !_isConfirmPasswordVisible;
+                      }
+                    });
+                  },
+                )
+              : null,
+        ),
       ),
     );
   }
