@@ -88,23 +88,84 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            const SizedBox(width: 10),
-            IconButton(
-              icon: const Icon(Icons.person),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ProfilePage(user: user)),
-                );
-              },
-            ),
-            IconButton(
-              icon: const Icon(Icons.logout),
-              onPressed: () => signUserOut(context),
-            ),
+            const SizedBox(width: 8),
           ],
         ),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: const Color.fromARGB(255, 68, 205, 255),
+      ),
+      endDrawer: Drawer(
+        child: SafeArea(
+          child: Column(
+            children: [
+              const SizedBox(height: 20),
+              // User profile section
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.grey,
+                child: Icon(Icons.person, size: 80, color: Colors.white),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                user.displayName ?? 'Username',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                user.phoneNumber ?? 'Phone number',
+                style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ProfilePage(user: user)),
+                  );
+                },
+                child: Text(
+                  'View/Edit Profile',
+                  style: TextStyle(color: Colors.blue),
+                ),
+              ),
+              const SizedBox(height: 20),
+              // Additional features
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Column(
+                  children: [
+                    _buildFeatureButton('Additional feature 1'),
+                    const SizedBox(height: 10),
+                    _buildFeatureButton('Additional feature 2'),
+                    const SizedBox(height: 10),
+                    _buildFeatureButton('Additional feature 3'),
+                    const SizedBox(height: 10),
+                    _buildFeatureButton('Additional feature 4'),
+                    const SizedBox(height: 10),
+                    _buildFeatureButton('Additional feature 5'),
+                    const SizedBox(height: 20),
+                    // Logout button
+                    Container(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () => signUserOut(context),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.black,
+                          padding: EdgeInsets.symmetric(vertical: 12),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text('Log out', style: TextStyle(color: Colors.white)),
+                            SizedBox(width: 8),
+                            Icon(Icons.logout, color: Colors.white),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -229,6 +290,25 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+  Widget _buildFeatureButton(String text) {
+    return Container(
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: () {},
+        style: ElevatedButton.styleFrom(
+          backgroundColor: const Color.fromARGB(255, 68, 205, 255),
+          padding: EdgeInsets.symmetric(vertical: 15),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+        child: Text(
+          text,
+          style: TextStyle(color: Colors.white),
         ),
       ),
     );

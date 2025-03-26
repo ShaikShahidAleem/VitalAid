@@ -111,6 +111,7 @@ class WelcomePage extends StatelessWidget {
                   child: OutlinedButton.icon(
                     onPressed: () {},
                     icon: Image.asset('assets/google_logo.png', height: 24),
+                    //icon: const Icon(Icons.google, size: 24),
                     label: const Text('Continue with Google'),
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16),
