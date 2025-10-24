@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:intl/intl.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
@@ -24,6 +23,7 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
+  late TextEditingController _dateOfAdmissionController;
   late TextEditingController _checkupDateController;
   late TextEditingController _doctorConsultedController;
   late TextEditingController _prescriptionOfferedController;
@@ -33,10 +33,13 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
   List<File> _prescriptionPdfs = [];
   List<File> _testResultsImages = [];
   List<File> _testResultsPdfs = [];
+  bool _isLoading = false;
 
   @override
   void initState() {
     super.initState();
+    _dateOfAdmissionController = TextEditingController(
+        text: widget.record?['dateOfAdmission'] ?? '');
     _checkupDateController = TextEditingController(
         text: widget.record?['checkupDate'] ?? '');
     _doctorConsultedController = TextEditingController(
@@ -49,6 +52,7 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
 
   @override
   void dispose() {
+    _dateOfAdmissionController.dispose();
     _checkupDateController.dispose();
     _doctorConsultedController.dispose();
     _prescriptionOfferedController.dispose();
@@ -56,16 +60,28 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
     super.dispose();
   }
 
-  Future<void> _selectDate(BuildContext context) async {
+  Future<void> _selectDate(BuildContext context, TextEditingController controller) async {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(2000),
-      lastDate: DateTime(2101),
+      lastDate: DateTime(2100),
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: const ColorScheme.light(
+              primary: Color(0xFF44CDFF),
+              onPrimary: Colors.white,
+              onSurface: Color(0xFF1E293B),
+            ),
+          ),
+          child: child!,
+        );
+      },
     );
     if (picked != null) {
       setState(() {
-        _checkupDateController.text = DateFormat('dd-MM-yyyy').format(picked);
+        controller.text = "${picked.day}/${picked.month}/${picked.year}";
       });
     }
   }
@@ -156,13 +172,15 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
     if (_formKey.currentState!.validate()) {
       try {
         setState(() {
-          // Show loading indicator
+          _isLoading = true;
         });
 
         final String? uid = _auth.currentUser?.uid;
         if (uid == null) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('User not logged in')),
+            const SnackBar(
+              content: Text('User not logged in'),
+            ),
           );
           return;
         }
@@ -174,7 +192,7 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
         List<String> testResultsPdfUrls = await _uploadFiles(_testResultsPdfs, 'test_results_pdfs');
 
         final data = {
-          'userId': uid,
+          'dateOfAdmission': _dateOfAdmissionController.text,
           'checkupDate': _checkupDateController.text,
           'doctorConsulted': _doctorConsultedController.text,
           'prescriptionOffered': _prescriptionOfferedController.text,
@@ -194,43 +212,94 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
           await _firestore.collection('users').doc(uid).collection('medical_records').add(data);
         }
 
-        Navigator.pop(context);
+        setState(() {
+          _isLoading = false;
+        });
+
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Record saved successfully')),
+          const SnackBar(
+            content: Text('Record saved successfully!'),
+            backgroundColor: Colors.green,
+          ),
         );
+
+        Navigator.pop(context);
       } catch (e) {
+        setState(() {
+          _isLoading = false;
+        });
         print("Error saving record: $e");
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error saving record: $e')),
+          SnackBar(
+            content: Text('Error saving record: $e'),
+            backgroundColor: Colors.red,
+          ),
         );
-      } finally {
-        setState(() {
-          // Hide loading indicator
-        });
       }
     }
   }
 
   Widget _buildFileSelectionButtons(String field) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          ElevatedButton(
-            onPressed: () => _pickImages(field),
-            child: Text('Upload Photos'),
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.photo_library,
+            label: 'Photos',
+            onTap: () => _pickImages(field),
           ),
-          SizedBox(width: 10),
-          ElevatedButton(
-            onPressed: () => _takePhoto(field),
-            child: Text('Take Photo'),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.camera_alt,
+            label: 'Camera',
+            onTap: () => _takePhoto(field),
           ),
-          SizedBox(width: 10),
-          ElevatedButton(
-            onPressed: () => _pickPdfs(field),
-            child: Text('Upload PDFs'),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.picture_as_pdf,
+            label: 'PDFs',
+            onTap: () => _pickPdfs(field),
           ),
-        ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildActionButton({
+    required IconData icon,
+    required String label,
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        decoration: BoxDecoration(
+          color: const Color(0xFF44CDFF).withOpacity(0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: const Color(0xFF44CDFF).withOpacity(0.3),
+          ),
+        ),
+        child: Column(
+          children: [
+            Icon(icon, color: const Color(0xFF0EA5E9), size: 24),
+            const SizedBox(height: 4),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Color(0xFF0EA5E9),
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -241,72 +310,185 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
     List<File> pdfs =
         field == 'prescription' ? _prescriptionPdfs : _testResultsPdfs;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Selected Images:'),
-        SizedBox(height: 5),
-        SizedBox(
-          height: 100,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: images.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(right: 8.0),
-                child: Image.file(images[index],
-                    width: 100, height: 100, fit: BoxFit.cover),
-              );
-            },
+    if (images.isEmpty && pdfs.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      margin: const EdgeInsets.only(top: 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
           ),
-        ),
-        SizedBox(height: 10),
-        Text('Selected PDFs:'),
-        SizedBox(height: 5),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: pdfs.map((pdf) => Text(pdf.path.split('/').last)).toList(),
-        ),
-      ],
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (images.isNotEmpty) ...[
+            Row(
+              children: [
+                const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                const SizedBox(width: 8),
+                Text(
+                  '${images.length} image(s) selected',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 80,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: images.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: const EdgeInsets.only(right: 8),
+                    width: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: const Color(0xFF44CDFF).withOpacity(0.3),
+                      ),
+                      image: DecorationImage(
+                        image: FileImage(images[index]),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+          if (pdfs.isNotEmpty) ...[
+            if (images.isNotEmpty) const SizedBox(height: 16),
+            Row(
+              children: [
+                const Icon(Icons.picture_as_pdf, color: Colors.red, size: 20),
+                const SizedBox(width: 8),
+                Text(
+                  '${pdfs.length} PDF(s) selected',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            ...pdfs.map((pdf) => Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Text(
+                '• ${pdf.path.split('/').last}',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.grey[700],
+                ),
+              ),
+            )).toList(),
+          ],
+        ],
+      ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
+        elevation: 0,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF44CDFF), Color(0xFF0EA5E9)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
         title: Text(
-            widget.recordId == null ? 'Add Medical Record' : 'Edit Medical Record'),
+          widget.recordId == null ? 'Add Medical Record' : 'Edit Medical Record',
+          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Form(
+      body: Stack(
+        children: [
+          Form(
             key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                TextFormField(
-                  controller: _checkupDateController,
-                  decoration: InputDecoration(
-                    labelText: 'Checkup Date',
-                    suffixIcon: IconButton(
-                      icon: Icon(Icons.calendar_today),
-                      onPressed: () => _selectDate(context),
+            child: ListView(
+              padding: const EdgeInsets.all(20.0),
+              children: [
+                // Header Section
+                Row(
+                  children: [
+                    Container(
+                      width: 4,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF44CDFF),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 12),
+                    const Text(
+                      'Record Details',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF1E293B),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+
+                // Date of Admission Field
+                _buildStyledTextField(
+                  controller: _dateOfAdmissionController,
+                  label: 'Date of Admission',
+                  icon: Icons.calendar_today,
                   readOnly: true,
+                  onTap: () => _selectDate(context, _dateOfAdmissionController),
+                  validator: (value) => null,
+                ),
+                const SizedBox(height: 16),
+
+                // Checkup Date Field
+                _buildStyledTextField(
+                  controller: _checkupDateController,
+                  label: 'Checkup Date',
+                  icon: Icons.event,
+                  readOnly: true,
+                  onTap: () => _selectDate(context, _checkupDateController),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter the checkup date';
+                      return 'Please select the checkup date';
                     }
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
-                TextFormField(
+                const SizedBox(height: 16),
+
+                // Doctor Consulted Field
+                _buildStyledTextField(
                   controller: _doctorConsultedController,
-                  decoration: InputDecoration(labelText: 'Doctor Consulted'),
+                  label: 'Doctor Consulted',
+                  icon: Icons.person,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Please enter the doctor\'s name';
@@ -314,37 +496,244 @@ class _AddEditMedicalRecordPageState extends State<AddEditMedicalRecordPage> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
-                TextFormField(
+                const SizedBox(height: 16),
+
+                // Prescription Field
+                _buildStyledTextField(
                   controller: _prescriptionOfferedController,
-                  decoration: InputDecoration(labelText: 'Prescription Offered'),
-                  maxLines: 3,
+                  label: 'Prescription Offered',
+                  icon: Icons.medical_services,
+                  maxLines: 4,
+                  validator: (value) => null,
                 ),
-                SizedBox(height: 16),
-                Text('Prescription Files:'),
-                SizedBox(height: 8),
-                _buildFileSelectionButtons('prescription'),
-                SizedBox(height: 8),
-                _buildFilePreview('prescription'),
-                SizedBox(height: 16),
-                TextFormField(
+                const SizedBox(height: 16),
+
+                // Test Results Field
+                _buildStyledTextField(
                   controller: _testResultsController,
-                  decoration: InputDecoration(labelText: 'Test Results'),
-                  maxLines: 3,
+                  label: 'Test Results',
+                  icon: Icons.science,
+                  maxLines: 4,
+                  validator: (value) => null,
                 ),
-                SizedBox(height: 16),
-                Text('Test Result Files:'),
-                SizedBox(height: 8),
+                const SizedBox(height: 24),
+
+                // Prescription Files Section
+                Row(
+                  children: [
+                    Container(
+                      width: 4,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF44CDFF),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    const Text(
+                      'Prescription Files',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF1E293B),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                _buildFileSelectionButtons('prescription'),
+                _buildFilePreview('prescription'),
+                const SizedBox(height: 24),
+
+                // Test Results Files Section
+                Row(
+                  children: [
+                    Container(
+                      width: 4,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF44CDFF),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    const Text(
+                      'Test Result Files',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF1E293B),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
                 _buildFileSelectionButtons('testResults'),
-                SizedBox(height: 8),
                 _buildFilePreview('testResults'),
-                SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: _saveRecord,
-                  child: Text('Save Medical Record'),
+                const SizedBox(height: 32),
+
+                // Save Button
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF44CDFF), Color(0xFF0EA5E9)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF44CDFF).withOpacity(0.4),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: _isLoading ? null : _saveRecord,
+                      borderRadius: BorderRadius.circular(16),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(Icons.save, color: Colors.white),
+                            SizedBox(width: 8),
+                            Text(
+                              'Save Medical Record',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
+                const SizedBox(height: 20),
               ],
             ),
+          ),
+
+          // Loading Overlay
+          if (_isLoading)
+            Container(
+              color: Colors.black.withOpacity(0.5),
+              child: const Center(
+                child: Card(
+                  child: Padding(
+                    padding: EdgeInsets.all(20.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF44CDFF)),
+                        ),
+                        SizedBox(height: 16),
+                        Text(
+                          'Saving record...',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStyledTextField({
+    required TextEditingController controller,
+    required String label,
+    required IconData icon,
+    int maxLines = 1,
+    bool readOnly = false,
+    VoidCallback? onTap,
+    String? Function(String?)? validator,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: TextFormField(
+        controller: controller,
+        readOnly: readOnly,
+        onTap: onTap,
+        maxLines: maxLines,
+        validator: validator,
+        style: const TextStyle(
+          fontSize: 16,
+          color: Color(0xFF1E293B),
+        ),
+        decoration: InputDecoration(
+          labelText: label,
+          labelStyle: TextStyle(
+            color: Colors.grey[600],
+            fontSize: 14,
+          ),
+          prefixIcon: Icon(
+            icon,
+            color: const Color(0xFF44CDFF),
+          ),
+          suffixIcon: readOnly
+              ? const Icon(
+                  Icons.arrow_drop_down,
+                  color: Color(0xFF44CDFF),
+                )
+              : null,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: BorderSide.none,
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: const BorderSide(
+              color: Color(0xFF44CDFF),
+              width: 2,
+            ),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 2,
+            ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: const BorderSide(
+              color: Colors.red,
+              width: 2,
+            ),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 16,
           ),
         ),
       ),
