@@ -6,6 +6,7 @@ import 'package:vitalaid/welcome_page.dart';
 import 'profile_page.dart';
 import 'procedure_detail_screen.dart';
 import 'procedure_search_delegate.dart';
+import 'chatbot_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -323,6 +324,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         ],
                       ),
                       const SizedBox(height: 16),
+                      _buildQuickActionCard('AI Assistant', Icons.chat_bubble, Colors.purple),
+                      const SizedBox(height: 12),
                       _buildQuickActionCard('Emergency Contacts', Icons.phone, Colors.red),
                       const SizedBox(height: 12),
                       _buildQuickActionCard('Health Tips', Icons.lightbulb, Colors.orange),
@@ -366,7 +369,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 _buildNavItem(Icons.chat_bubble, 4, false, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MedicalRecordsPage()),
+                    MaterialPageRoute(builder: (context) => const ChatbotPage()),
                   );
                 }),
               ],
@@ -515,7 +518,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     );
   }
 
-  Widget _buildQuickActionCard(String title, IconData icon, Color color) {
+  Widget _buildQuickActionCard(String title, IconData icon, Color color, {VoidCallback? onTap}) {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -531,7 +534,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: onTap ?? () {
+            if (title == 'AI Assistant') {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ChatbotPage()),
+              );
+            }
+          },
           borderRadius: BorderRadius.circular(16),
           child: Padding(
             padding: const EdgeInsets.all(16.0),
