@@ -1,10 +1,9 @@
-// add_medical_record_page.dart
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class AddMedicalRecordPage extends StatefulWidget {
@@ -16,55 +15,20 @@ class AddMedicalRecordPage extends StatefulWidget {
 
 class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
   final _formKey = GlobalKey<FormState>();
-  final _auth = FirebaseAuth.instance;
-  final _firestore = FirebaseFirestore.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   TextEditingController _dateOfAdmissionController = TextEditingController();
   TextEditingController _checkupDateController = TextEditingController();
   TextEditingController _doctorConsultedController = TextEditingController();
   TextEditingController _prescriptionOfferedController = TextEditingController();
+  TextEditingController _testResultsController = TextEditingController();
 
-  List<String> _medicalReportUrls = [];
-  List<File> _medicalReportFiles = [];
+  List<File> _prescriptionImages = [];
+  List<File> _prescriptionPdfs = [];
+  List<File> _testResultsImages = [];
+  List<File> _testResultsPdfs = [];
   bool _isLoading = false;
-
-  Future<void> _pickMedicalReports() async {
-    final ImagePicker _picker = ImagePicker();
-    final List<XFile>? images = await _picker.pickMultiImage();
-
-    if (images != null) {
-      setState(() {
-        _medicalReportFiles = images.map((image) => File(image.path)).toList();
-      });
-    }
-  }
-
-  Future<void> _uploadMedicalReports() async {
-    if (_medicalReportFiles.isEmpty) return;
-
-    setState(() {
-      _isLoading = true;
-    });
-
-    List<String> urls = [];
-    for (File file in _medicalReportFiles) {
-      String fileName = DateTime.now().millisecondsSinceEpoch.toString() + "_" + file.path.split('/').last;
-      firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance
-          .ref()
-          .child('medical_reports')
-          .child(_auth.currentUser!.uid)
-          .child(fileName);
-
-      await ref.putFile(file);
-      String downloadURL = await ref.getDownloadURL();
-      urls.add(downloadURL);
-    }
-
-    setState(() {
-      _medicalReportUrls = urls;
-      _isLoading = false;
-    });
-  }
 
   Future<void> _selectDate(BuildContext context, TextEditingController controller) async {
     final DateTime? picked = await showDatePicker(
@@ -92,30 +56,126 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
     }
   }
 
+  Future<void> _pickImages(String field) async {
+    final ImagePicker picker = ImagePicker();
+    final List<XFile>? images = await picker.pickMultiImage();
+
+    if (images != null) {
+      setState(() {
+        if (field == 'prescription') {
+          _prescriptionImages
+              .addAll(images.map((image) => File(image.path)));
+        } else {
+          _testResultsImages.addAll(images.map((image) => File(image.path)));
+        }
+      });
+    }
+  }
+
+  Future<void> _takePhoto(String field) async {
+    final ImagePicker picker = ImagePicker();
+    final XFile? photo = await picker.pickImage(source: ImageSource.camera);
+
+    if (photo != null) {
+      setState(() {
+        if (field == 'prescription') {
+          _prescriptionImages.add(File(photo.path));
+        } else {
+          _testResultsImages.add(File(photo.path));
+        }
+      });
+    }
+  }
+
+  Future<void> _pickPdfs(String field) async {
+    FilePickerResult? result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['pdf'],
+      allowMultiple: true,
+    );
+
+    if (result != null && result.files.isNotEmpty) {
+      setState(() {
+        if (field == 'prescription') {
+          _prescriptionPdfs.addAll(result.files
+              .where((file) => file.path != null)
+              .map((file) => File(file.path!)));
+        } else {
+          _testResultsPdfs.addAll(result.files
+              .where((file) => file.path != null)
+              .map((file) => File(file.path!)));
+        }
+      });
+    }
+  }
+
+  Future<List<String>> _uploadFiles(List<File> files, String folderName) async {
+    List<String> urls = [];
+
+    if (files.isEmpty) return urls;
+
+    try {
+      for (var file in files) {
+        String fileName = '${DateTime.now().millisecondsSinceEpoch}_${file.path.split('/').last}';
+
+        firebase_storage.Reference storageRef = firebase_storage.FirebaseStorage.instance
+            .ref()
+            .child('users')
+            .child(_auth.currentUser!.uid)
+            .child(folderName)
+            .child(fileName);
+
+        firebase_storage.UploadTask uploadTask = storageRef.putFile(file);
+
+        await uploadTask.whenComplete(() async {
+          String downloadUrl = await storageRef.getDownloadURL();
+          urls.add(downloadUrl);
+        });
+      }
+    } catch (e) {
+      print("Error uploading files: $e");
+    }
+    return urls;
+  }
+
   Future<void> _saveMedicalRecord() async {
     if (_formKey.currentState!.validate()) {
-      _formKey.currentState!.save();
-
-      setState(() {
-        _isLoading = true;
-      });
-
-      // Upload medical reports
-      await _uploadMedicalReports();
-
-      // Save data to Firestore
       try {
-        await _firestore
-            .collection('users')
-            .doc(_auth.currentUser!.uid)
-            .collection('medical_records')
-            .add({
+        setState(() {
+          _isLoading = true;
+        });
+
+        final String? uid = _auth.currentUser?.uid;
+        if (uid == null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('User not logged in'),
+            ),
+          );
+          return;
+        }
+
+        // Upload files and get URLs
+        List<String> prescriptionImageUrls = await _uploadFiles(_prescriptionImages, 'prescription_images');
+        List<String> prescriptionPdfUrls = await _uploadFiles(_prescriptionPdfs, 'prescription_pdfs');
+        List<String> testResultsImageUrls = await _uploadFiles(_testResultsImages, 'test_results_images');
+        List<String> testResultsPdfUrls = await _uploadFiles(_testResultsPdfs, 'test_results_pdfs');
+
+        final data = {
           'dateOfAdmission': _dateOfAdmissionController.text,
           'checkupDate': _checkupDateController.text,
           'doctorConsulted': _doctorConsultedController.text,
           'prescriptionOffered': _prescriptionOfferedController.text,
-          'medicalReports': _medicalReportUrls,
-        });
+          'testResults': _testResultsController.text,
+          'prescriptionImageUrls': prescriptionImageUrls,
+          'prescriptionPdfUrls': prescriptionPdfUrls,
+          'testResultsImageUrls': testResultsImageUrls,
+          'testResultsPdfUrls': testResultsPdfUrls,
+          'timestamp': FieldValue.serverTimestamp(),
+        };
+
+        // Adding a new record
+        await _firestore.collection('users').doc(uid).collection('medical_records').add(data);
 
         setState(() {
           _isLoading = false;
@@ -124,7 +184,7 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
         // Show success message
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Medical record saved successfully!'),
+            content: Text('Record saved successfully!'),
             backgroundColor: Colors.green,
           ),
         );
@@ -137,13 +197,176 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
         });
         print("Error saving medical record: $e");
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Failed to save medical record"),
+          SnackBar(
+            content: Text('Error saving record: $e'),
             backgroundColor: Colors.red,
           ),
         );
       }
     }
+  }
+
+  Widget _buildFileSelectionButtons(String field) {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.photo_library,
+            label: 'Photos',
+            onTap: () => _pickImages(field),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.camera_alt,
+            label: 'Camera',
+            onTap: () => _takePhoto(field),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: _buildActionButton(
+            icon: Icons.picture_as_pdf,
+            label: 'PDFs',
+            onTap: () => _pickPdfs(field),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildActionButton({
+    required IconData icon,
+    required String label,
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        decoration: BoxDecoration(
+          color: const Color(0xFF44CDFF).withOpacity(0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: const Color(0xFF44CDFF).withOpacity(0.3),
+          ),
+        ),
+        child: Column(
+          children: [
+            Icon(icon, color: const Color(0xFF0EA5E9), size: 24),
+            const SizedBox(height: 4),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Color(0xFF0EA5E9),
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFilePreview(String field) {
+    List<File> images =
+        field == 'prescription' ? _prescriptionImages : _testResultsImages;
+    List<File> pdfs =
+        field == 'prescription' ? _prescriptionPdfs : _testResultsPdfs;
+
+    if (images.isEmpty && pdfs.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      margin: const EdgeInsets.only(top: 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (images.isNotEmpty) ...[
+            Row(
+              children: [
+                const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                const SizedBox(width: 8),
+                Text(
+                  '${images.length} image(s) selected',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 80,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: images.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: const EdgeInsets.only(right: 8),
+                    width: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: const Color(0xFF44CDFF).withOpacity(0.3),
+                      ),
+                      image: DecorationImage(
+                        image: FileImage(images[index]),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+          if (pdfs.isNotEmpty) ...[
+            if (images.isNotEmpty) const SizedBox(height: 16),
+            Row(
+              children: [
+                const Icon(Icons.picture_as_pdf, color: Colors.red, size: 20),
+                const SizedBox(width: 8),
+                Text(
+                  '${pdfs.length} PDF(s) selected',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            ...pdfs.map((pdf) => Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Text(
+                '• ${pdf.path.split('/').last}',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.grey[700],
+                ),
+              ),
+            )).toList(),
+          ],
+        ],
+      ),
+    );
   }
 
   @override
@@ -208,12 +431,7 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
                   icon: Icons.calendar_today,
                   readOnly: true,
                   onTap: () => _selectDate(context, _dateOfAdmissionController),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please select the date of admission';
-                    }
-                    return null;
-                  },
+                  validator: (value) => null,
                 ),
                 const SizedBox(height: 16),
 
@@ -255,9 +473,19 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
                   maxLines: 4,
                   validator: (value) => null,
                 ),
+                const SizedBox(height: 16),
+
+                // Test Results Field
+                _buildStyledTextField(
+                  controller: _testResultsController,
+                  label: 'Test Results',
+                  icon: Icons.science,
+                  maxLines: 4,
+                  validator: (value) => null,
+                ),
                 const SizedBox(height: 24),
 
-                // Medical Reports Section
+                // Prescription Files Section
                 Row(
                   children: [
                     Container(
@@ -270,7 +498,7 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
                     ),
                     const SizedBox(width: 12),
                     const Text(
-                      'Medical Reports',
+                      'Prescription Files',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -280,129 +508,35 @@ class _AddMedicalRecordPageState extends State<AddMedicalRecordPage> {
                   ],
                 ),
                 const SizedBox(height: 16),
+                _buildFileSelectionButtons('prescription'),
+                _buildFilePreview('prescription'),
+                const SizedBox(height: 24),
 
-                // Pick Images Button
-                InkWell(
-                  onTap: _pickMedicalReports,
-                  borderRadius: BorderRadius.circular(16),
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: const Color(0xFF44CDFF).withOpacity(0.3),
-                        width: 2,
-                        style: BorderStyle.solid,
+                // Test Results Files Section
+                Row(
+                  children: [
+                    Container(
+                      width: 4,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF44CDFF),
+                        borderRadius: BorderRadius.circular(2),
                       ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
-                          blurRadius: 10,
-                          offset: const Offset(0, 4),
-                        ),
-                      ],
                     ),
-                    child: Column(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF44CDFF).withOpacity(0.1),
-                            shape: BoxShape.circle,
-                          ),
-                          child: const Icon(
-                            Icons.cloud_upload,
-                            size: 40,
-                            color: Color(0xFF0EA5E9),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        const Text(
-                          'Upload Medical Reports',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0xFF1E293B),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          'Tap to select images',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey[600],
-                          ),
-                        ),
-                      ],
+                    const SizedBox(width: 12),
+                    const Text(
+                      'Test Result Files',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF1E293B),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
                 const SizedBox(height: 16),
-
-                // Display selected images
-                if (_medicalReportFiles.isNotEmpty)
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
-                          blurRadius: 10,
-                          offset: const Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.check_circle,
-                              color: Colors.green,
-                              size: 20,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              '${_medicalReportFiles.length} file(s) selected',
-                              style: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: Color(0xFF1E293B),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        SizedBox(
-                          height: 80,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: _medicalReportFiles.length,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                margin: const EdgeInsets.only(right: 8),
-                                width: 80,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(
-                                    color: const Color(0xFF44CDFF).withOpacity(0.3),
-                                  ),
-                                  image: DecorationImage(
-                                    image: FileImage(_medicalReportFiles[index]),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                _buildFileSelectionButtons('testResults'),
+                _buildFilePreview('testResults'),
                 const SizedBox(height: 32),
 
                 // Save Button

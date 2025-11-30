@@ -363,7 +363,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 }),
                 _buildEmergencyButton(),
                 _buildNavItem(Icons.health_and_safety, 3, false),
-                _buildNavItem(Icons.person, 4, false),
+                _buildNavItem(Icons.chat_bubble, 4, false, onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MedicalRecordsPage()),
+                  );
+                }),
               ],
             ),
           ),
