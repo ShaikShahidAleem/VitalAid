@@ -1,0 +1,1794 @@
+{
+  "collection": "first_aid_procedures",
+  "documentCount": 150,
+  "exportedAt": "2025-12-23T18:05:30.227Z",
+  "documents": [
+    {
+      "id": "bites_001",
+      "name": "Snake Bite",
+      "keywords": [
+        "venom",
+        "reptile bite",
+        "poisonous bite",
+        "poison"
+      ],
+      "description": "Wound caused by snake teeth, potentially involving venom injection",
+      "notes": "Don't apply tourniquet, cut wound, suck out venom, or apply ice",
+      "steps": [
+        "Keep victim calm and still",
+        "Remove jewelry/tight items near bite",
+        "Clean wound gently",
+        "Immobilize affected limb at heart level",
+        "Mark swelling edge and note time",
+        "Transport to hospital immediately"
+      ]
+    },
+    {
+      "id": "bites_002",
+      "name": "Animal Bites",
+      "keywords": [
+        "dog bite",
+        "cat bite",
+        "mammal bite",
+        "animal bite",
+        "bite"
+      ],
+      "description": "Wounds from animal teeth that may cause tissue damage and infection",
+      "notes": "Risk of rabies and tetanus requires medical follow-up",
+      "steps": [
+        "Wash wound thoroughly with soap and water",
+        "Control bleeding with direct pressure",
+        "Apply antiseptic if available",
+        "Cover with clean bandage",
+        "Seek medical help, especially for deep wounds"
+      ]
+    },
+    {
+      "id": "bites_003",
+      "name": "Insect Stings",
+      "keywords": [
+        "bee sting",
+        "wasp sting",
+        "hornet sting",
+        "sting",
+        "poison"
+      ],
+      "description": "Puncture wounds from insects that inject venom",
+      "notes": "Seek emergency help for allergic reactions: difficulty breathing, swelling of face/throat, dizziness",
+      "steps": [
+        "Remove stinger if visible (scrape, don't squeeze)",
+        "Wash area with soap and water",
+        "Apply cold compress",
+        "Take antihistamine if available",
+        "Watch for signs of severe allergic reaction"
+      ]
+    },
+    {
+      "id": "cardio_001",
+      "name": "Cardiac Arrest",
+      "keywords": [
+        "heart attack",
+        "heart stopped",
+        "no pulse"
+      ],
+      "description": "When the heart stops pumping blood effectively, causing unconsciousness and no normal breathing",
+      "notes": "Compression depth: 5-6cm at rate of 100-120 per minute",
+      "steps": [
+        "Check responsiveness",
+        "Call for emergency help",
+        "Begin CPR immediately: 30 chest compressions followed by 2 rescue breaths",
+        "Continue until help arrives or victim shows signs of life",
+        "If available, use AED following its instructions"
+      ]
+    },
+    {
+      "id": "cardio_002",
+      "name": "Chest Pain",
+      "keywords": [
+        "heart attack",
+        "angina",
+        "cardiac"
+      ],
+      "description": "Discomfort or pain in chest that may indicate serious heart problems",
+      "notes": "Pain may radiate to arm, jaw, back or stomach",
+      "steps": [
+        "Help person into comfortable position (usually sitting, leaning forward)",
+        "Call for emergency help",
+        "If person has prescribed medication (like nitroglycerin), help them take it",
+        "Loosen tight clothing",
+        "Monitor breathing and consciousness",
+        "Be prepared to perform CPR if needed"
+      ]
+    },
+    {
+      "id": "cardio_003",
+      "name": "Severe Bleeding",
+      "keywords": [
+        "hemorrhage",
+        "blood loss",
+        "wound bleeding"
+      ],
+      "description": "Significant blood loss that can lead to shock and be life-threatening",
+      "notes": "Do not remove embedded objects from wounds",
+      "steps": [
+        "Apply direct pressure to wound with clean cloth/bandage",
+        "If possible, elevate injured area above heart level",
+        "Add more bandages if blood soaks through (don't remove original bandage)",
+        "If bleeding continues, apply pressure to appropriate pressure point",
+        "Secure bandages firmly",
+        "Treat for shock",
+        "Seek medical help urgently"
+      ]
+    },
+    {
+      "id": "cardio_004",
+      "name": "Shock",
+      "keywords": [
+        "circulatory shock",
+        "blood pressure drop",
+        "trauma shock"
+      ],
+      "description": "A life-threatening condition when body isn't getting enough blood flow, causing vital organs to not function properly",
+      "notes": "Signs include: pale skin, rapid breathing, weak pulse, confusion",
+      "steps": [
+        "Lay person flat on back",
+        "Elevate legs 30cm if no spinal injury suspected",
+        "Keep person warm with blankets",
+        "Loosen tight clothing",
+        "Don't give food or drink",
+        "Monitor breathing and consciousness",
+        "Seek immediate medical help"
+      ]
+    },
+    {
+      "id": "environ_001",
+      "name": "Heat Exhaustion",
+      "keywords": [
+        "overheating",
+        "heat stress",
+        "dehydration",
+        "heat stroke",
+        "sun stroke",
+        "dizziness",
+        "nausea",
+        "headache",
+        "sweating"
+      ],
+      "description": "Condition resulting from excessive heat exposure and dehydration",
+      "notes": "Signs: heavy sweating, cool/moist skin, headache, nausea, dizziness",
+      "steps": [
+        "Move to cool place",
+        "Remove excess clothing",
+        "Lie down with legs elevated",
+        "Apply cool, wet cloths to body",
+        "Sip water slowly",
+        "If no improvement in 30 minutes, seek medical help"
+      ]
+    },
+    {
+      "id": "environ_002",
+      "name": "Heat Stroke",
+      "keywords": [
+        "hyperthermia",
+        "sunstroke",
+        "overheating"
+      ],
+      "description": "Life-threatening condition when body temperature rises dangerously high",
+      "notes": "Signs: hot/dry skin, high body temperature, confusion, possible unconsciousness",
+      "steps": [
+        "Call for emergency help",
+        "Move to cool place",
+        "Remove excess clothing",
+        "Cool body rapidly with water/ice packs to neck, armpits, groin",
+        "Monitor breathing and consciousness"
+      ]
+    },
+    {
+      "id": "environ_003",
+      "name": "Hypothermia",
+      "keywords": [
+        "cold exposure",
+        "low body temperature",
+        "freezing",
+        "chills",
+        "shiver"
+      ],
+      "description": "Dangerous drop in body temperature below 35°C (95°F)",
+      "notes": "Don't warm extremities first or use direct heat sources",
+      "steps": [
+        "Move to warm place",
+        "Remove wet clothing",
+        "Warm center of body first with blankets",
+        "If conscious, give warm (not hot) beverages",
+        "Monitor breathing",
+        "Seek medical help"
+      ]
+    },
+    {
+      "id": "environ_004",
+      "name": "Frostbite",
+      "keywords": [
+        "frozen skin",
+        "cold injury",
+        "tissue freezing",
+        "freezing"
+      ],
+      "description": "Freezing of body tissues, usually extremities, due to extreme cold",
+      "notes": "Affected areas may be numb, waxy-looking, and discolored",
+      "steps": [
+        "Move to warm place",
+        "Don't rub affected area",
+        "Immerse in warm (not hot) water",
+        "Don't use direct heat sources",
+        "Don't break blisters",
+        "Seek medical help"
+      ]
+    },
+    {
+      "id": "injury_001",
+      "name": "Fractures",
+      "keywords": [
+        "broken bone",
+        "bone injury",
+        "crack"
+      ],
+      "description": "A break or crack in a bone caused by trauma or medical conditions",
+      "notes": "Don't attempt to realign bones or push protruding bones back",
+      "steps": [
+        "Immobilize injury site including joints above and below",
+        "Apply cold compress to reduce swelling",
+        "For open fractures, cover wound with clean dressing before immobilizing",
+        "Support injury in position found or most comfortable",
+        "Check circulation beyond injury site",
+        "Seek medical help"
+      ]
+    },
+    {
+      "id": "injury_002",
+      "name": "Sprains and Strains",
+      "keywords": [
+        "ligament injury",
+        "muscle pull",
+        "twisted joint",
+        "swelling",
+        "swollen muscles"
+      ],
+      "description": "Injuries to ligaments (sprains) or muscles/tendons (strains) from overstretching or tearing",
+      "notes": "Remember RICE: Rest, Ice, Compression, Elevation",
+      "steps": [
+        "Rest the injured area",
+        "Apply ice pack for 20 minutes every 2-3 hours",
+        "Compress with elastic bandage",
+        "Elevate the injured part",
+        "Take pain relievers if needed",
+        "Seek medical attention if severe"
+      ]
+    },
+    {
+      "id": "injury_003",
+      "name": "Head Injury",
+      "keywords": [
+        "concussion",
+        "brain trauma",
+        "skull injury"
+      ],
+      "description": "Trauma to the head that may affect brain function",
+      "notes": "Don't shake person to wake them or remove objects impaled in head",
+      "steps": [
+        "Assess consciousness and breathing",
+        "If unconscious but breathing, place in recovery position",
+        "Control any bleeding with gentle pressure",
+        "Apply cold compress to swelling",
+        "Monitor for changes in consciousness, vomiting, unequal pupils",
+        "Seek medical help, especially if loss of consciousness occurred"
+      ]
+    },
+    {
+      "id": "injury_004",
+      "name": "Cuts and Abrasions",
+      "keywords": [
+        "lacerations",
+        "scrapes",
+        "open wounds",
+        "cut"
+      ],
+      "description": "Breaks in the skin ranging from minor scrapes to deep cuts",
+      "notes": "Signs of infection: increasing pain, redness, swelling, warmth, pus",
+      "steps": [
+        "Clean hands before treating",
+        "Clean wound with clean water",
+        "Remove any dirt or debris",
+        "Apply antiseptic if available",
+        "Cover with sterile dressing",
+        "Apply pressure if bleeding",
+        "Seek medical help for deep cuts, embedded objects, or signs of infection"
+      ]
+    },
+    {
+      "id": "injury_005",
+      "name": "Burns",
+      "keywords": [
+        "thermal burns",
+        "scalds",
+        "fire injury",
+        "burn"
+      ],
+      "description": "Tissue damage from heat, chemicals, electricity, radiation or friction",
+      "notes": "Classify by degrees: 1st (red skin), 2nd (blisters), 3rd (white/charred skin)",
+      "steps": [
+        "Remove from source of burn",
+        "Cool burn with cool (not cold) running water for 10-20 minutes",
+        "Remove jewelry/tight items from burned area",
+        "Cover with clean, non-stick bandage",
+        "Don't apply butter, toothpaste or home remedies",
+        "Seek medical help for severe or large burns"
+      ]
+    },
+    {
+      "id": "injury_006",
+      "name": "Eye Injuries",
+      "keywords": [
+        "eye trauma",
+        "foreign body",
+        "chemical splash",
+        "eye injury",
+        "dirt in eyes"
+      ],
+      "description": "Damage to the eye from impact, foreign objects, or chemicals",
+      "notes": "Never rub eyes or try to remove embedded objects",
+      "steps": [
+        "For chemical splashes: Flush with clean water for 15-20 minutes",
+        "For foreign objects: Don't rub eye, try blinking or gentle rinsing",
+        "For impacts: Apply cold compress without pressure",
+        "For embedded objects: Don't remove, stabilize and seek help",
+        "Cover both eyes to prevent movement"
+      ]
+    },
+    {
+      "id": "injury_007",
+      "name": "Nosebleed",
+      "keywords": [
+        "epistaxis",
+        "nasal bleeding",
+        "bloody nose"
+      ],
+      "description": "Bleeding from the nose, often from trauma, dry air, or medical conditions",
+      "notes": "Seek help if bleeding doesn't stop after 20 minutes or is extremely heavy",
+      "steps": [
+        "Sit upright, leaning slightly forward",
+        "Pinch soft part of nose for 10-15 minutes",
+        "Breathe through mouth",
+        "Apply cold compress to bridge of nose",
+        "Avoid blowing nose for several hours after bleeding stops"
+      ]
+    },
+    {
+      "id": "medical_001",
+      "name": "Stroke",
+      "keywords": [
+        "brain attack",
+        "cerebrovascular accident",
+        "CVA",
+        "stroke"
+      ],
+      "description": "Brain damage from interrupted blood flow causing sudden neurological symptoms",
+      "notes": "Time is critical - immediate medical attention needed",
+      "steps": [
+        "Use FAST check: Face drooping, Arm weakness, Speech difficulties, Time to call emergency",
+        "Note time symptoms started",
+        "Keep person comfortable",
+        "Don't give food or drink",
+        "Position on affected side if unconscious but breathing"
+      ]
+    },
+    {
+      "id": "medical_002",
+      "name": "Seizures",
+      "keywords": [
+        "convulsions",
+        "fits",
+        "epilepsy"
+      ],
+      "description": "Sudden, uncontrolled electrical disturbance in the brain causing changes in behavior, movements, or consciousness",
+      "notes": "Seek help if first seizure, lasts >5 minutes, or person doesn't regain consciousness",
+      "steps": [
+        "Protect from injury by clearing area",
+        "Don't restrain person",
+        "Don't put anything in mouth",
+        "Time the seizure",
+        "After seizure, place in recovery position if unconscious but breathing",
+        "Stay until fully recovered"
+      ]
+    },
+    {
+      "id": "medical_003",
+      "name": "Diabetic Emergencies",
+      "keywords": [
+        "hypoglycemia",
+        "hyperglycemia",
+        "insulin shock",
+        "sugar"
+      ],
+      "description": "Complications from abnormal blood sugar levels in diabetics",
+      "notes": "High blood sugar: excessive thirst, frequent urination, fruity breath; Low blood sugar: confusion, weakness, hunger",
+      "steps": [
+        "If conscious and symptoms suggest low blood sugar, give sugar source (juice, honey)",
+        "If unconscious but breathing, place in recovery position",
+        "Don't give anything by mouth if unconscious",
+        "Call for emergency help"
+      ]
+    },
+    {
+      "id": "medical_004",
+      "name": "Poisoning",
+      "keywords": [
+        "toxic ingestion",
+        "overdose",
+        "chemical exposure",
+        "poison",
+        "drug"
+      ],
+      "description": "Harmful effects from swallowing, inhaling, injecting, or absorbing toxic substances",
+      "notes": "Bring substance container or name to hospital if possible",
+      "steps": [
+        "Call poison control center",
+        "Remove person from source if inhalation",
+        "Remove contaminated clothing for skin exposure",
+        "Rinse skin with water for 15-20 minutes if skin exposure",
+        "Don't induce vomiting unless directed by medical professionals"
+      ]
+    },
+    {
+      "id": "medical_005",
+      "name": "Allergic Reaction",
+      "keywords": [
+        "anaphylaxis",
+        "hypersensitivity",
+        "allergy shock",
+        "allergy"
+      ],
+      "description": "Severe overreaction of immune system to allergen, potentially life-threatening",
+      "notes": "Severe signs: difficulty breathing, swelling of face/throat, rapid pulse, dizziness",
+      "steps": [
+        "Call for emergency help for severe reactions",
+        "Help use epinephrine auto-injector if available and prescribed",
+        "Help take antihistamine if mild reaction",
+        "Keep calm and still",
+        "If breathing difficulty, help into position that eases breathing"
+      ]
+    },
+    {
+      "id": "respiratory_001",
+      "name": "Choking",
+      "keywords": [
+        "choking",
+        "airway obstruction",
+        "blockage",
+        "heimlich",
+        "abdominal thrust"
+      ],
+      "description": "A life-threatening emergency when a foreign object blocks the airway, preventing normal breathing",
+      "notes": "For babies under 1 year: Use 5 back blows followed by 5 chest thrusts instead of abdominal thrusts",
+      "steps": [
+        "Ask \"Are you choking?\"",
+        "If person can cough, encourage them to keep coughing",
+        "If unable to speak/cough: Stand behind, support chest, bend forward",
+        "Give 5 firm back blows between shoulder blades",
+        "If unsuccessful, give 5 abdominal thrusts",
+        "Alternate between 5 back blows and 5 abdominal thrusts until object is expelled",
+        "If person becomes unconscious, begin CPR"
+      ]
+    },
+    {
+      "id": "respiratory_002",
+      "name": "Drowning",
+      "keywords": [
+        "submersion",
+        "water accident",
+        "swimming accident"
+      ],
+      "description": "Respiratory impairment from submersion in liquid causing asphyxia by water, weeds or mud entering lungs",
+      "notes": "Hypothermia is a common complication - keep victim warm",
+      "steps": [
+        "Ensure your safety first",
+        "Remove victim from water without endangering yourself",
+        "Check breathing",
+        "If breathing, place in recovery position and keep warm",
+        "If not breathing, begin CPR immediately",
+        "Do not try to remove water from lungs",
+        "Transport to healthcare facility urgently"
+      ]
+    },
+    {
+      "id": "respiratory_003",
+      "name": "Asthma Attack",
+      "keywords": [
+        "wheezing",
+        "breathlessness",
+        "inhaler"
+      ],
+      "description": "A condition where airways narrow, swell and produce extra mucus, making breathing difficult",
+      "notes": "Severe attacks can be life-threatening",
+      "steps": [
+        "Help the person to sit upright in comfortable position",
+        "Assist with using their inhaler if available",
+        "Encourage slow, deep breathing",
+        "Loosen tight clothing",
+        "If no improvement after inhaler use or symptoms worsen, seek emergency medical help"
+      ]
+    },
+    {
+      "id": "respiratory_004",
+      "name": "Suffocation",
+      "keywords": [
+        "smoke inhalation",
+        "gas exposure",
+        "carbon monoxide"
+      ],
+      "description": "Inability to breathe due to lack of oxygen, often from smoke, gases or airway compression",
+      "notes": "Carbon monoxide is especially dangerous as it's colorless and odorless",
+      "steps": [
+        "Ensure your safety first",
+        "Remove victim from danger area",
+        "For smoke: stay low, use wet cloth over mouth if entering area",
+        "For gases: determine if lighter or heavier than air and approach accordingly",
+        "Ensure fresh air circulation",
+        "Loosen victim's clothing",
+        "Begin CPR if not breathing",
+        "Transport to healthcare facility"
+      ]
+    },
+    {
+      "id": "special_001",
+      "name": "Emergency Childbirth",
+      "keywords": [
+        "labor",
+        "delivery",
+        "birth",
+        "pregnant"
+      ],
+      "description": "Unexpected delivery of baby outside medical setting",
+      "notes": "Keep both mother and baby warm",
+      "steps": [
+        "Call for emergency help",
+        "Help mother into comfortable position",
+        "Wash hands thoroughly",
+        "Place clean materials under mother",
+        "Support baby's head as it emerges",
+        "Clear baby's airway if needed",
+        "Dry and warm baby",
+        "Place baby on mother's chest",
+        "Don't pull on umbilical cord"
+      ]
+    },
+    {
+      "id": "special_002",
+      "name": "Psychological First Aid",
+      "keywords": [
+        "emotional",
+        "trauma",
+        "crisis support",
+        "mental distress",
+        "mental",
+        "breakdown",
+        "mental breakdown"
+      ],
+      "description": "Humane, supportive response to fellow human suffering and who may need support",
+      "notes": "Don't pressure to tell their story or give advice instead of listening",
+      "steps": [
+        "Approach calmly and introduce yourself",
+        "Provide practical care and support",
+        "Listen attentively without pressure",
+        "Comfort and help person feel calm",
+        "Help connect to information, services, social supports",
+        "Protect from further harm"
+      ]
+    },
+    {
+      "id": "special_003",
+      "name": "CPR",
+      "keywords": [
+        "cardiopulmonary resuscitation",
+        "rescue breathing",
+        "chest compressions",
+        "breathless",
+        "breathing"
+      ],
+      "description": "Emergency procedure combining chest compressions and rescue breaths to maintain circulation and oxygenation",
+      "notes": "For children: use less force; For infants: use 2 fingers for compressions",
+      "steps": [
+        "Check responsiveness",
+        "Call for emergency help",
+        "Place on hard surface",
+        "Give 30 chest compressions (5-6cm deep, 100-120/minute)",
+        "Give 2 rescue breaths",
+        "Continue 30:2 ratio until help arrives or signs of life return"
+      ]
+    },
+    {
+      "id": "bites_004",
+      "name": "Tick Bite",
+      "keywords": [
+        "tick",
+        "insect bite",
+        "lyme",
+        "bite"
+      ],
+      "description": "Bite from a tick that may transmit infections like Lyme disease",
+      "notes": "Don't crush or twist the tick body during removal",
+      "steps": [
+        "Use fine-tipped tweezers to grasp tick close to skin",
+        "Pull upward steadily without twisting",
+        "Clean bite area with soap and water or antiseptic",
+        "Dispose of tick in sealed container or alcohol",
+        "Monitor for rash, fever or flu-like symptoms and seek medical care if they appear"
+      ]
+    },
+    {
+      "id": "bites_005",
+      "name": "Scorpion Sting",
+      "keywords": [
+        "scorpion",
+        "sting",
+        "venom"
+      ],
+      "description": "Painful sting from a scorpion that may inject venom",
+      "notes": "Children and older adults are at higher risk for severe reactions",
+      "steps": [
+        "Move person to safe area away from scorpion",
+        "Wash sting site with soap and water",
+        "Apply cold compress wrapped in cloth",
+        "Keep affected limb immobilized and at heart level",
+        "Seek medical attention, especially for severe pain, numbness or breathing difficulty"
+      ]
+    },
+    {
+      "id": "bites_006",
+      "name": "Spider Bite (Non‑Venomous)",
+      "keywords": [
+        "spider bite",
+        "insect bite",
+        "bite"
+      ],
+      "description": "Localized skin reaction from most common, non‑venomous spiders",
+      "notes": "Most bites cause minor irritation and heal without complications",
+      "steps": [
+        "Clean area with soap and water",
+        "Apply cold compress to reduce pain and swelling",
+        "Elevate affected limb if swollen",
+        "Take over‑the‑counter pain relievers or antihistamines if needed",
+        "Seek medical care if symptoms worsen or signs of infection appear"
+      ]
+    },
+    {
+      "id": "bites_007",
+      "name": "Spider Bite (Suspected Venomous)",
+      "keywords": [
+        "venomous spider",
+        "black widow",
+        "brown recluse",
+        "spider bite"
+      ],
+      "description": "Potentially serious bite from venomous spiders that can cause systemic symptoms",
+      "notes": "If safe, note spider appearance or take a photo for identification",
+      "steps": [
+        "Move person away from area where spider was found",
+        "Clean bite gently with soap and water",
+        "Apply cold compress intermittently",
+        "Keep affected limb lowered or at heart level",
+        "Seek urgent medical attention, especially for severe pain, muscle cramps or spreading redness"
+      ]
+    },
+    {
+      "id": "bites_008",
+      "name": "Jellyfish Sting",
+      "keywords": [
+        "jellyfish",
+        "marine sting",
+        "sea sting"
+      ],
+      "description": "Sting from jellyfish tentacles that inject venom into the skin",
+      "notes": "Different species need different treatments; local guidelines should be followed",
+      "steps": [
+        "Move person out of water to safe place",
+        "Avoid rubbing the affected area",
+        "Rinse tentacles off using seawater, not fresh water",
+        "Carefully remove visible tentacles with tweezers or gloved hand",
+        "Immerse affected area in hot water (not scalding) if recommended locally",
+        "Seek medical help if pain is severe or there are systemic symptoms like breathing difficulty"
+      ]
+    },
+    {
+      "id": "bites_009",
+      "name": "Fish Spine or Sea Urchin Injury",
+      "keywords": [
+        "sea urchin",
+        "fish spine",
+        "marine injury"
+      ],
+      "description": "Puncture wounds from fish spines or sea urchin spines",
+      "notes": "Some spines may break off and remain embedded in the skin",
+      "steps": [
+        "Rinse wound with clean water or saline",
+        "Soak affected area in warm water to ease pain if appropriate",
+        "Do not attempt to dig out deeply embedded spines",
+        "Cover with clean dressing",
+        "Seek medical care for removal and to prevent infection"
+      ]
+    },
+    {
+      "id": "bites_010",
+      "name": "Leech Bite",
+      "keywords": [
+        "leech",
+        "bloodsucker",
+        "bite"
+      ],
+      "description": "Attachment of a leech to the skin that feeds on blood",
+      "notes": "Pulling forcefully may leave mouthparts in the skin",
+      "steps": [
+        "Avoid pulling the leech directly",
+        "Use fingernail, credit card edge or blunt object to gently slide under its mouth to detach",
+        "Once removed, wash area with soap and water",
+        "Apply antiseptic and small dressing",
+        "Monitor for prolonged bleeding or infection and seek care if needed"
+      ]
+    },
+
+    {
+      "id": "cardio_005",
+      "name": "Fainting (Syncope)",
+      "keywords": [
+        "fainting",
+        "syncope",
+        "collapse"
+      ],
+      "description": "Brief loss of consciousness due to temporary reduction in blood flow to the brain",
+      "notes": "Often short‑lived but can signal underlying problems",
+      "steps": [
+        "Lay person flat on back",
+        "Elevate legs about 30cm if no injury suspected",
+        "Loosen tight clothing",
+        "Check breathing and responsiveness",
+        "If unconscious for more than a minute or symptoms persist, seek medical help"
+      ]
+    },
+    {
+      "id": "cardio_006",
+      "name": "Palpitations",
+      "keywords": [
+        "rapid heartbeat",
+        "irregular heartbeat",
+        "palpitations"
+      ],
+      "description": "Awareness of abnormal, rapid or irregular heartbeats",
+      "notes": "Palpitations with chest pain, dizziness or fainting can be serious",
+      "steps": [
+        "Help person sit or lie down in a comfortable position",
+        "Encourage slow, deep breathing to reduce anxiety",
+        "Ask about any known heart conditions or medications",
+        "Avoid stimulants such as caffeine and energy drinks",
+        "Seek medical assessment if symptoms are severe, recurrent or associated with chest pain or fainting"
+      ]
+    },
+    {
+      "id": "cardio_007",
+      "name": "High Blood Pressure Crisis (Suspected)",
+      "keywords": [
+        "hypertensive crisis",
+        "very high blood pressure",
+        "headache"
+      ],
+      "description": "Very high blood pressure that may cause severe headache, chest pain or neurological symptoms",
+      "notes": "Home blood pressure devices can help confirm high readings if available",
+      "steps": [
+        "Have person sit upright and stay calm",
+        "Loosen tight clothing",
+        "Ask if they have prescribed blood pressure medication and assist with taking it as directed",
+        "Do not give extra doses beyond prescription",
+        "Seek urgent medical care if severe headache, visual changes, chest pain or weakness occur"
+      ]
+    },
+    {
+      "id": "cardio_008",
+      "name": "Low Blood Pressure (Hypotension)",
+      "keywords": [
+        "low blood pressure",
+        "dizziness",
+        "faint"
+      ],
+      "description": "Blood pressure that is too low to supply adequate blood flow to organs",
+      "notes": "Can result from dehydration, blood loss or medications",
+      "steps": [
+        "Have person lie down flat",
+        "Elevate legs if no injury, spinal problem or breathing difficulty",
+        "Loosen tight clothing",
+        "Offer small sips of water if fully conscious and not at risk of vomiting",
+        "Seek medical help if symptoms persist or person has chest pain, shortness of breath or confusion"
+      ]
+    },
+    {
+      "id": "cardio_009",
+      "name": "Chest Trauma (Blunt)",
+      "keywords": [
+        "chest injury",
+        "rib fracture",
+        "blunt trauma"
+      ],
+      "description": "Injury to chest wall or organs from a blow or compression",
+      "notes": "Can cause internal bleeding or lung damage even without visible wounds",
+      "steps": [
+        "Assess breathing and level of consciousness",
+        "Help person find a position that eases breathing, usually semi‑sitting",
+        "Support injured side with a folded cloth or pillow",
+        "Avoid tightly binding chest which may restrict breathing",
+        "Seek urgent medical care, especially if breathing is painful, shallow or fast"
+      ]
+    },
+    {
+      "id": "cardio_010",
+      "name": "Penetrating Chest Wound",
+      "keywords": [
+        "open chest wound",
+        "sucking chest wound",
+        "penetrating injury"
+      ],
+      "description": "Open wound to chest from objects like knives or bullets",
+      "notes": "Removing embedded objects can worsen bleeding and collapse lung",
+      "steps": [
+        "Do not remove any embedded object",
+        "Apply bulky dressing around object to stabilize it",
+        "If there is an open wound without embedded object, cover with sterile dressing and tape on three sides to allow air to escape",
+        "Position person with injured side down if it eases breathing",
+        "Seek emergency medical help immediately"
+      ]
+    },
+
+    {
+      "id": "environ_005",
+      "name": "Sunburn",
+      "keywords": [
+        "sunburn",
+        "UV burn",
+        "sun exposure"
+      ],
+      "description": "Skin damage from excessive exposure to ultraviolet radiation",
+      "notes": "Repeated sunburns increase risk of skin cancer",
+      "steps": [
+        "Move out of sun into shade or indoors",
+        "Cool skin with cool compresses or cool bath",
+        "Apply soothing lotion like aloe vera if available",
+        "Encourage oral fluids to prevent dehydration",
+        "Seek medical help if blistering is extensive, there is fever or signs of dehydration"
+      ]
+    },
+    {
+      "id": "environ_006",
+      "name": "Dehydration",
+      "keywords": [
+        "fluid loss",
+        "thirst",
+        "dry mouth"
+      ],
+      "description": "Loss of more fluids than taken in, reducing body’s ability to function",
+      "notes": "Severe dehydration is a medical emergency, especially in children and older adults",
+      "steps": [
+        "Move person to cool, shaded area",
+        "Give small, frequent sips of water or oral rehydration solution",
+        "Avoid very sugary or caffeinated drinks",
+        "Monitor for confusion, rapid pulse or lack of sweating",
+        "Seek medical help if unable to keep fluids down or if symptoms are severe"
+      ]
+    },
+    {
+      "id": "environ_007",
+      "name": "Lightning Strike",
+      "keywords": [
+        "lightning",
+        "electric injury",
+        "storm"
+      ],
+      "description": "Injury from direct or nearby lightning strike carrying massive electrical energy",
+      "notes": "Multiple victims may be affected; those without signs of life should be prioritized for CPR",
+      "steps": [
+        "Ensure scene is safe; lightning can strike again",
+        "Check responsiveness and breathing immediately",
+        "Begin CPR if no normal breathing",
+        "Treat visible burns and injuries with clean dressings",
+        "Seek emergency medical help for all lightning strike victims"
+      ]
+    },
+    {
+      "id": "environ_008",
+      "name": "Avalanche or Snow Burial",
+      "keywords": [
+        "avalanche",
+        "snow burial",
+        "cold rescue"
+      ],
+      "description": "Burial or compression under snow following an avalanche or collapse",
+      "notes": "Risk of suffocation, trauma and hypothermia is high",
+      "steps": [
+        "Ensure area is safe from further avalanches",
+        "Mark last seen point and begin systematic search if trained",
+        "Once located, uncover face and clear airway first",
+        "Check breathing and circulation",
+        "Protect from cold and handle gently to avoid triggering cardiac arrest",
+        "Seek emergency medical help immediately"
+      ]
+    },
+    {
+      "id": "environ_009",
+      "name": "Minor Chemical Exposure (Skin)",
+      "keywords": [
+        "chemical burn",
+        "skin exposure",
+        "irritant"
+      ],
+      "description": "Contact of skin with mildly irritating chemicals like detergents or diluted acids",
+      "notes": "Always check container label for specific first aid advice",
+      "steps": [
+        "Remove contaminated clothing and jewelry",
+        "Rinse affected skin with running water for at least 15 minutes",
+        "Avoid using neutralizing chemicals unless advised by professionals",
+        "Cover with clean, dry dressing if skin is damaged",
+        "Seek medical care if pain, redness or blistering persists"
+      ]
+    },
+    {
+      "id": "environ_010",
+      "name": "Serious Chemical Exposure (Skin or Eyes)",
+      "keywords": [
+        "strong acid",
+        "strong alkali",
+        "chemical burn"
+      ],
+      "description": "Contact with corrosive chemicals that can cause deep burns or eye damage",
+      "notes": "Alkalis can cause deeper injury than acids and may feel less painful initially",
+      "steps": [
+        "Ensure personal safety before assisting",
+        "Flush affected area with large amounts of running water immediately",
+        "For eyes, hold eyelids open and rinse continuously for at least 15-20 minutes",
+        "Remove contaminated clothing while rinsing",
+        "Seek emergency medical attention promptly"
+      ]
+    },
+
+    {
+      "id": "injury_008",
+      "name": "Crush Injury",
+      "keywords": [
+        "crush injury",
+        "trapped limb",
+        "heavy object"
+      ],
+      "description": "Damage to body tissues from prolonged pressure by heavy objects",
+      "notes": "Releasing a crushed limb after long compression can cause sudden shock",
+      "steps": [
+        "Ensure scene safety before approaching",
+        "Call for emergency help",
+        "If object is light and safe, carefully remove it",
+        "If limb has been trapped for a long time, wait for professional help before lifting heavy objects",
+        "Control bleeding and cover wounds with sterile dressings",
+        "Monitor for signs of shock"
+      ]
+    },
+    {
+      "id": "injury_009",
+      "name": "Amputation (Partial or Complete)",
+      "keywords": [
+        "amputation",
+        "severed limb",
+        "finger cut off"
+      ],
+      "description": "Loss of part of a limb or body part due to injury",
+      "notes": "Proper handling of amputated part increases chance of surgical reattachment",
+      "steps": [
+        "Call emergency medical services immediately",
+        "Control bleeding from stump using direct pressure and dressings",
+        "Wrap amputated part in sterile or clean cloth",
+        "Place wrapped part in waterproof bag, then put bag on ice or in cold water (do not place directly on ice)",
+        "Label with time and send with patient to hospital"
+      ]
+    },
+    {
+      "id": "injury_010",
+      "name": "Joint Dislocation",
+      "keywords": [
+        "dislocation",
+        "joint out of place",
+        "shoulder dislocation"
+      ],
+      "description": "Separation of bones that normally meet at a joint",
+      "notes": "Forcing joint back into place can cause serious damage",
+      "steps": [
+        "Support injured joint in position found using padding or sling",
+        "Apply cold compress to reduce swelling and pain",
+        "Do not attempt to reposition the joint",
+        "Check circulation and sensation beyond injury",
+        "Seek prompt medical attention"
+      ]
+    },
+    {
+      "id": "injury_011",
+      "name": "Soft Tissue Bruise (Contusion)",
+      "keywords": [
+        "bruise",
+        "contusion",
+        "minor injury"
+      ],
+      "description": "Bleeding under the skin due to blunt impact, causing discoloration and tenderness",
+      "notes": "Large or unexplained bruises can indicate underlying medical issues",
+      "steps": [
+        "Apply cold pack wrapped in cloth for 15-20 minutes",
+        "Elevate bruised area if possible",
+        "Avoid massaging the area",
+        "Monitor for increased swelling or severe pain",
+        "Seek medical advice if bruise is very large, painful or associated with suspected fracture"
+      ]
+    },
+    {
+      "id": "injury_012",
+      "name": "Puncture Wound",
+      "keywords": [
+        "puncture",
+        "nail injury",
+        "sharp object"
+      ],
+      "description": "Deep, narrow wound caused by sharp objects such as nails or needles",
+      "notes": "High risk of infection due to depth and difficulty in cleaning",
+      "steps": [
+        "Allow minor bleeding to help flush out debris",
+        "Gently wash area with soap and water",
+        "Do not probe the wound or remove deeply embedded objects",
+        "Cover with clean, sterile dressing",
+        "Seek medical care, especially if object was dirty or tetanus vaccination is not current"
+      ]
+    },
+    {
+      "id": "injury_013",
+      "name": "Blister (Friction)",
+      "keywords": [
+        "blister",
+        "friction blister",
+        "shoe bite"
+      ],
+      "description": "Fluid‑filled bubble on skin caused by repeated friction or rubbing",
+      "notes": "Intact blisters protect underlying skin and reduce infection risk",
+      "steps": [
+        "Clean area with mild soap and water",
+        "Leave small, intact blisters unbroken when possible",
+        "Cover with protective dressing or blister pad",
+        "If large and painful, sterilize needle and drain fluid from edge without removing top skin",
+        "Apply antiseptic and clean dressing"
+      ]
+    },
+    {
+      "id": "injury_014",
+      "name": "Finger or Toe Jam",
+      "keywords": [
+        "jammed finger",
+        "jammed toe",
+        "stubbed"
+      ],
+      "description": "Impact injury to finger or toe causing pain and swelling at a joint",
+      "notes": "May involve sprain or fracture",
+      "steps": [
+        "Apply ice pack wrapped in cloth for 15-20 minutes",
+        "Elevate affected hand or foot",
+        "Buddy‑tape injured finger or toe to adjacent one if not deformed",
+        "Avoid putting weight on painful toe",
+        "Seek medical care if deformity, severe pain or inability to move joint is present"
+      ]
+    },
+    {
+      "id": "injury_015",
+      "name": "Embedded Object in Wound",
+      "keywords": [
+        "embedded object",
+        "impaled object",
+        "stuck in wound"
+      ],
+      "description": "Foreign object lodged in wound such as glass, metal or wood",
+      "notes": "Removing object can increase bleeding and damage tissues",
+      "steps": [
+        "Do not remove embedded object",
+        "Stabilize object by padding around it with cloth or dressings",
+        "Apply bandages to hold padding and object in place",
+        "Control bleeding by pressing around, not on, the object",
+        "Seek immediate medical attention"
+      ]
+    },
+
+    {
+      "id": "medical_006",
+      "name": "Fever (Adult)",
+      "keywords": [
+        "fever",
+        "high temperature",
+        "infection"
+      ],
+      "description": "Elevated body temperature often due to infection or inflammation",
+      "notes": "Very high fever or associated confusion requires urgent assessment",
+      "steps": [
+        "Measure temperature if thermometer is available",
+        "Encourage rest and light clothing",
+        "Offer plenty of fluids",
+        "Use fever‑reducing medicine only as directed on label or by doctor",
+        "Seek medical help if fever is very high, lasts more than a couple of days or is accompanied by severe symptoms"
+      ]
+    },
+    {
+      "id": "medical_007",
+      "name": "Fever (Child)",
+      "keywords": [
+        "child fever",
+        "pediatric fever",
+        "high temperature"
+      ],
+      "description": "Raised body temperature in infants and children",
+      "notes": "Infants under 3 months with fever should be seen by a doctor quickly",
+      "steps": [
+        "Check temperature with appropriate thermometer for child’s age",
+        "Keep child in light clothing and comfortable room temperature",
+        "Offer frequent fluids like breast milk, formula or water as appropriate",
+        "Do not give adult medicines to children",
+        "Seek urgent medical help for difficulty breathing, rash, persistent vomiting, seizures or if child is very drowsy"
+      ]
+    },
+    {
+      "id": "medical_008",
+      "name": "Gastroenteritis (Vomiting and Diarrhea)",
+      "keywords": [
+        "vomiting",
+        "diarrhea",
+        "stomach bug",
+        "food poisoning"
+      ],
+      "description": "Inflammation of stomach and intestines causing vomiting and diarrhea",
+      "notes": "Main risk is dehydration, especially in children and older adults",
+      "steps": [
+        "Encourage small, frequent sips of oral rehydration solution or clear fluids",
+        "Avoid solid foods until vomiting improves, then introduce bland foods slowly",
+        "Encourage handwashing to prevent spread",
+        "Do not give anti‑diarrheal medicines to young children without medical advice",
+        "Seek medical care if blood is present in stool, high fever or signs of dehydration occur"
+      ]
+    },
+    {
+      "id": "medical_009",
+      "name": "Abdominal Pain (Unknown Cause)",
+      "keywords": [
+        "stomach ache",
+        "abdominal pain",
+        "belly pain"
+      ],
+      "description": "Pain anywhere between chest and groin with many possible causes",
+      "notes": "Severe, sudden or persistent abdominal pain can indicate serious conditions",
+      "steps": [
+        "Have person rest in comfortable position",
+        "Avoid giving food, drink or painkillers unless needed and not contraindicated",
+        "Observe for worsening pain, vomiting, fever or inability to pass stool or gas",
+        "Do not apply strong heat to abdomen",
+        "Seek medical evaluation if pain is severe, localized, persistent or associated with fainting"
+      ]
+    },
+    {
+      "id": "medical_010",
+      "name": "Migraine or Severe Headache",
+      "keywords": [
+        "migraine",
+        "headache",
+        "throbbing head"
+      ],
+      "description": "Intense headache often with nausea, sensitivity to light or sound",
+      "notes": "Headaches with sudden onset, confusion or weakness require urgent care",
+      "steps": [
+        "Move to quiet, dark room if possible",
+        "Encourage rest and relaxation",
+        "Offer usual prescribed or over‑the‑counter pain medication if appropriate",
+        "Apply cool cloth to forehead",
+        "Seek medical attention if headache is sudden, worst ever, or associated with weakness, confusion, fever or stiff neck"
+      ]
+    },
+    {
+      "id": "medical_011",
+      "name": "Hyperventilation (Rapid Breathing)",
+      "keywords": [
+        "hyperventilation",
+        "panic attack",
+        "fast breathing"
+      ],
+      "description": "Breathing too quickly, often from anxiety or panic, causing dizziness and tingling",
+      "notes": "Underlying medical causes such as asthma or heart problems must be considered",
+      "steps": [
+        "Reassure person and encourage slow, controlled breathing",
+        "Ask them to breathe in through nose and out through pursed lips",
+        "Encourage counting slowly while breathing (for example 4 in, 6 out)",
+        "Remove person from stressful situation if possible",
+        "Seek medical care if chest pain, bluish lips or confusion are present"
+      ]
+    },
+    {
+      "id": "medical_012",
+      "name": "Food Allergy Reaction",
+      "keywords": [
+        "food allergy",
+        "allergic reaction",
+        "hives after eating"
+      ],
+      "description": "Immune reaction after eating certain foods, ranging from mild to life‑threatening",
+      "notes": "Anaphylaxis is a medical emergency requiring immediate treatment",
+      "steps": [
+        "Stop eating the suspected food immediately",
+        "For mild reactions, give antihistamine if available and previously used",
+        "Monitor for swelling of lips, tongue or throat, breathing difficulty or dizziness",
+        "Use prescribed epinephrine auto‑injector if severe symptoms develop",
+        "Call emergency services for any signs of anaphylaxis"
+      ]
+    },
+    {
+      "id": "medical_013",
+      "name": "Menstrual Cramps (Severe Dysmenorrhea)",
+      "keywords": [
+        "menstrual cramps",
+        "period pain",
+        "dysmenorrhea"
+      ],
+      "description": "Painful cramping in lower abdomen during menstruation",
+      "notes": "New or unusually severe pain can indicate other conditions",
+      "steps": [
+        "Encourage rest in a comfortable position",
+        "Apply warm pack to lower abdomen if available",
+        "Use over‑the‑counter pain relief if appropriate and not contraindicated",
+        "Encourage hydration and light activity such as gentle stretching",
+        "Seek medical advice if pain is severe, worsening or associated with unusual bleeding"
+      ]
+    },
+    {
+      "id": "medical_014",
+      "name": "Constipation",
+      "keywords": [
+        "constipation",
+        "hard stool",
+        "no bowel movement"
+      ],
+      "description": "Difficult or infrequent bowel movements often with hard stools",
+      "notes": "Sudden severe abdominal pain with constipation may need urgent assessment",
+      "steps": [
+        "Encourage increased fluid intake unless restricted",
+        "Suggest high‑fiber foods such as fruits, vegetables and whole grains",
+        "Encourage gentle physical activity like walking",
+        "Avoid excessive use of laxatives without medical advice",
+        "Seek medical help if constipation lasts more than several days or is accompanied by abdominal pain, vomiting or blood in stool"
+      ]
+    },
+    {
+      "id": "medical_015",
+      "name": "Nose Inhalation of Foreign Body (Child)",
+      "keywords": [
+        "object in nose",
+        "child foreign body",
+        "nose blockage"
+      ],
+      "description": "Small object stuck in nostril, often in young children",
+      "notes": "Home removal attempts can push object further in",
+      "steps": [
+        "Keep child calm and discourage probing nose with fingers or tools",
+        "Do not insert cotton swabs or instruments into nostril",
+        "Have child breathe through mouth",
+        "If visible and easily grasped, adult may gently remove with tweezers, but avoid blind attempts",
+        "Seek medical attention for safe removal"
+      ]
+    },
+
+    {
+      "id": "respiratory_005",
+      "name": "Foreign Body in Throat (Mild Obstruction)",
+      "keywords": [
+        "mild choking",
+        "throat object",
+        "coughing"
+      ],
+      "description": "Foreign object partially blocking airway but person can still cough or speak",
+      "notes": "Strong coughing is body’s way to clear obstruction",
+      "steps": [
+        "Encourage person to continue coughing forcefully",
+        "Advise them to spit out object if it reaches mouth",
+        "Do not slap back unless coughing becomes ineffective",
+        "Stay with person and monitor breathing",
+        "Seek medical review if discomfort persists or object is not expelled"
+      ]
+    },
+    {
+      "id": "respiratory_006",
+      "name": "Smoke Inhalation (Minor)",
+      "keywords": [
+        "smoke inhalation",
+        "fire exposure",
+        "smoke"
+      ],
+      "description": "Breathing in smoke causing irritation to airways and eyes",
+      "notes": "Even minor exposure can worsen existing lung disease",
+      "steps": [
+        "Move person to fresh air immediately",
+        "Help them sit upright in comfortable position",
+        "Loosen tight clothing around neck and chest",
+        "Rinse eyes with clean water if irritated",
+        "Seek medical help if persistent cough, wheezing or difficulty breathing occurs"
+      ]
+    },
+    {
+      "id": "respiratory_007",
+      "name": "Hyperventilation from Panic Attack",
+      "keywords": [
+        "panic attack",
+        "anxiety attack",
+        "fast breathing"
+      ],
+      "description": "Rapid breathing caused by intense anxiety, leading to dizziness and tingling",
+      "notes": "Symptoms can mimic heart attack or asthma",
+      "steps": [
+        "Speak calmly and reassuringly to person",
+        "Encourage slow inhalation through nose and longer exhalation through mouth",
+        "Ask them to focus on counting breaths or an object in the room",
+        "Remove or reduce crowd and noise if possible",
+        "Seek medical assistance if chest pain or collapse occurs or if first episode"
+      ]
+    },
+    {
+      "id": "respiratory_008",
+      "name": "Minor Nose Irritation from Inhaled Irritant",
+      "keywords": [
+        "irritant inhalation",
+        "nose irritation",
+        "chemical smell"
+      ],
+      "description": "Burning or irritation in nose and throat after inhaling mild irritants like cleaning fumes",
+      "notes": "Prolonged exposure can lead to more serious lung problems",
+      "steps": [
+        "Move away from source of fumes to fresh air",
+        "Open windows and doors to ventilate area if safe",
+        "Rinse mouth and nose gently with clean water",
+        "Avoid re‑exposure to irritant",
+        "Seek medical care if coughing, wheezing or shortness of breath develops"
+      ]
+    },
+    {
+      "id": "respiratory_009",
+      "name": "Breathing Difficulty in Child (Non‑Specific)",
+      "keywords": [
+        "child breathing difficulty",
+        "wheezing child",
+        "fast breathing"
+      ],
+      "description": "Increased work of breathing in a child due to many possible causes",
+      "notes": "Children can deteriorate quickly when breathing is compromised",
+      "steps": [
+        "Sit child upright or in position that eases breathing",
+        "Loosen tight clothing around chest and neck",
+        "Keep child calm and avoid unnecessary movement",
+        "Use prescribed inhalers or nebulizers if asthma is known and medication available",
+        "Seek urgent medical attention for noisy breathing, chest retractions or bluish lips"
+      ]
+    },
+    {
+      "id": "respiratory_010",
+      "name": "Croup (Barking Cough in Child)",
+      "keywords": [
+        "croup",
+        "barking cough",
+        "stridor"
+      ],
+      "description": "Viral illness in young children causing barking cough and noisy breathing",
+      "notes": "Breathing can suddenly worsen at night",
+      "steps": [
+        "Keep child calm; crying can worsen symptoms",
+        "Sit them upright on caregiver’s lap",
+        "Offer cool or humidified air if available",
+        "Avoid throat lozenges in very young children due to choking risk",
+        "Seek medical care if breathing is labored, noisy at rest or child appears very unwell"
+      ]
+    },
+
+    {
+      "id": "special_004",
+      "name": "Spinal Injury (Suspected)",
+      "keywords": [
+        "spinal injury",
+        "back injury",
+        "neck injury"
+      ],
+      "description": "Damage or suspected damage to bones or cord of spine",
+      "notes": "Movement may worsen spinal cord damage",
+      "steps": [
+        "Instruct person not to move head, neck or back",
+        "Support head and neck in position found using hands or padding",
+        "Do not straighten or twist spine",
+        "Call for emergency help",
+        "Monitor breathing and be prepared to provide CPR without moving neck excessively"
+      ]
+    },
+    {
+      "id": "special_005",
+      "name": "Pelvic Injury",
+      "keywords": [
+        "pelvic fracture",
+        "hip injury",
+        "pelvis trauma"
+      ],
+      "description": "Injury to pelvic bones often from high‑energy trauma",
+      "notes": "May involve severe internal bleeding",
+      "steps": [
+        "Advise person to remain still and lie flat if possible",
+        "Avoid moving legs apart or rotating hips",
+        "Place padding under knees to slightly bend hips if comfortable",
+        "Treat for shock with warmth and reassurance",
+        "Seek emergency medical help immediately"
+      ]
+    },
+    {
+      "id": "special_006",
+      "name": "Dental Trauma (Broken or Knocked‑Out Tooth)",
+      "keywords": [
+        "tooth injury",
+        "knocked out tooth",
+        "dental trauma"
+      ],
+      "description": "Injury to teeth or surrounding tissues from impact",
+      "notes": "Quick action can sometimes save a knocked‑out adult tooth",
+      "steps": [
+        "Control mouth bleeding with clean gauze or cloth",
+        "If adult tooth is completely knocked out, handle by crown, not root",
+        "Rinse tooth gently with clean water if dirty, do not scrub",
+        "Try to place tooth back into socket and have person bite gently on cloth, or store tooth in milk or saline",
+        "Seek urgent dental care"
+      ]
+    },
+    {
+      "id": "special_007",
+      "name": "Ear Foreign Body",
+      "keywords": [
+        "object in ear",
+        "ear canal",
+        "ear foreign body"
+      ],
+      "description": "Object stuck in ear canal such as bead, insect or cotton tip",
+      "notes": "Using tools can push object deeper or damage ear",
+      "steps": [
+        "Ask person not to poke ear with fingers or objects",
+        "Do not attempt removal with cotton swabs or sharp instruments",
+        "If insect is suspected, tilt head and gently pour warm (not hot) clean oil if not allergic and eardrum is likely intact",
+        "Allow insect to float out, then drain oil",
+        "Seek medical care for safe removal"
+      ]
+    },
+    {
+      "id": "special_008",
+      "name": "Eye Chemical Splash",
+      "keywords": [
+        "chemical in eye",
+        "eye burn",
+        "eye splash"
+      ],
+      "description": "Chemical accidentally splashed into one or both eyes",
+      "notes": "Immediate and prolonged irrigation is critical",
+      "steps": [
+        "Hold eyelids open with clean fingers",
+        "Rinse eye with running clean water or saline for at least 15-20 minutes",
+        "Tilt head so affected eye is lower and liquid flows away from other eye",
+        "Remove contact lenses if easily possible during rinsing",
+        "Seek emergency medical care promptly after rinsing"
+      ]
+    },
+    {
+      "id": "special_009",
+      "name": "Foreign Body in Eye (Surface)",
+      "keywords": [
+        "dust in eye",
+        "eyelash in eye",
+        "foreign body eye"
+      ],
+      "description": "Small particles on surface of eye or under eyelid causing irritation",
+      "notes": "Rubbing may scratch the cornea",
+      "steps": [
+        "Ask person to blink several times to encourage object to wash out",
+        "Rinse eye with clean water or saline while holding eyelids open",
+        "Check under upper eyelid by gently pulling it down over lower lid and releasing",
+        "Do not use sharp objects or cotton swabs on eye surface",
+        "Seek medical care if pain, tearing or blurred vision persists"
+      ]
+    },
+    {
+      "id": "special_010",
+      "name": "Epistaxis in Child (Nosebleed)",
+      "keywords": [
+        "child nosebleed",
+        "nose bleeding child",
+        "epistaxis child"
+      ],
+      "description": "Bleeding from nose in children, often due to nose picking or minor trauma",
+      "notes": "Tilting head back can cause blood to be swallowed",
+      "steps": [
+        "Have child sit up and lean slightly forward",
+        "Pinch soft part of nose just below bridge for 10 minutes",
+        "Encourage breathing through mouth",
+        "After bleeding stops, advise avoiding nose blowing or picking for several hours",
+        "Seek medical help if bleeding is heavy or recurs frequently"
+      ]
+    },
+
+    {
+      "id": "psych_001",
+      "name": "Panic Attack Support",
+      "keywords": [
+        "panic attack",
+        "anxiety",
+        "sudden fear"
+      ],
+      "description": "Sudden episode of intense fear with physical symptoms like palpitations and breathlessness",
+      "notes": "Symptoms can mimic serious physical illness",
+      "steps": [
+        "Stay calm and speak reassuringly",
+        "Encourage slow breathing and grounding techniques (naming objects, focusing on sensations)",
+        "Move to quieter, less crowded space if possible",
+        "Stay with person until symptoms ease",
+        "Seek medical care if chest pain, collapse or prolonged symptoms occur"
+      ]
+    },
+    {
+      "id": "psych_002",
+      "name": "Acute Grief or Shock Reaction",
+      "keywords": [
+        "emotional shock",
+        "grief",
+        "bad news"
+      ],
+      "description": "Strong emotional response after receiving traumatic news or experiencing loss",
+      "notes": "Supportive presence can reduce long‑term psychological effects",
+      "steps": [
+        "Provide quiet and safe environment",
+        "Listen actively without interrupting or judging",
+        "Offer simple, practical help such as contacting family or arranging transport",
+        "Encourage slow breathing if hyperventilating",
+        "Recommend follow‑up with mental health or counselling services"
+      ]
+    },
+    {
+      "id": "psych_003",
+      "name": "Self‑Harm or Suicidal Thoughts (Immediate Support)",
+      "keywords": [
+        "self harm",
+        "suicidal",
+        "mental crisis"
+      ],
+      "description": "Person expresses desire to harm themselves or end their life",
+      "notes": "Any mention of suicide should be taken seriously",
+      "steps": [
+        "Ensure immediate safety by removing access to sharp objects, medications or heights if possible",
+        "Stay with person and speak calmly, encouraging them to talk about feelings",
+        "Avoid judgmental or dismissive statements",
+        "Contact emergency services or crisis helpline if risk appears high",
+        "Encourage follow‑up with mental health professionals and trusted family or friends"
+      ]
+    },
+    {
+      "id": "psych_004",
+      "name": "Acute Agitation or Aggression",
+      "keywords": [
+        "agitation",
+        "aggressive behavior",
+        "violent outburst"
+      ],
+      "description": "State of extreme restlessness, agitation or aggression that may endanger self or others",
+      "notes": "Personal safety and safety of others is the priority",
+      "steps": [
+        "Keep a safe distance and do not corner the person",
+        "Speak calmly and avoid shouting or sudden movements",
+        "Remove bystanders from area if possible",
+        "If safe, offer choices such as moving to quieter space or sitting down",
+        "Seek help from emergency services or trained security/mental health personnel if risk remains high"
+      ]
+    },
+    {
+      "id": "psych_005",
+      "name": "Acute Confusion or Delirium",
+      "keywords": [
+        "confusion",
+        "disorientation",
+        "delirium"
+      ],
+      "description": "Sudden change in awareness, thinking and perception, often due to medical illness",
+      "notes": "May be first sign of serious underlying condition like infection or stroke",
+      "steps": [
+        "Ensure environment is safe by removing hazards",
+        "Speak slowly and clearly, reorienting person to time, place and who you are",
+        "Avoid arguing about mistaken beliefs or hallucinations",
+        "Check for medical alert bracelets or information",
+        "Seek urgent medical evaluation"
+      ]
+    },
+
+    {
+      "id": "home_001",
+      "name": "Minor Kitchen Burn",
+      "keywords": [
+        "kitchen burn",
+        "hot pan injury",
+        "small burn"
+      ],
+      "description": "Small superficial burn from contact with hot pans, oil or steam",
+      "notes": "Early cooling limits tissue damage",
+      "steps": [
+        "Remove hand or area from heat source immediately",
+        "Cool burn under cool running water for 10-20 minutes",
+        "Remove rings or tight items before swelling starts",
+        "Cover with clean, non‑stick dressing or cling film",
+        "Monitor for blistering or infection and seek care if burn is large or on face, hands or joints"
+      ]
+    },
+    {
+      "id": "home_002",
+      "name": "Minor Electrical Shock (Low Voltage)",
+      "keywords": [
+        "electric shock",
+        "low voltage",
+        "electrical injury"
+      ],
+      "description": "Brief shock from household electricity without persistent symptoms",
+      "notes": "Cardiac and muscle effects are possible even if injury seems minor",
+      "steps": [
+        "Ensure power source is switched off before touching person",
+        "Assess responsiveness and breathing",
+        "Check for entry and exit burn marks and cover with clean dressings",
+        "Advise medical review, especially in children, pregnant individuals or those with heart disease",
+        "Seek urgent help if chest pain, confusion or loss of consciousness occurred"
+      ]
+    },
+    {
+      "id": "home_003",
+      "name": "Glass Cut",
+      "keywords": [
+        "glass cut",
+        "laceration",
+        "sharp cut"
+      ],
+      "description": "Cut from broken glass or sharp household items",
+      "notes": "Small glass fragments may remain in wound",
+      "steps": [
+        "Rinse wound gently with clean water to remove obvious debris",
+        "Apply direct pressure with clean cloth or dressing to control bleeding",
+        "Do not explore wound deeply with fingers or tools",
+        "Cover with sterile dressing",
+        "Seek medical help if cut is deep, edges are gaping or glass may remain inside"
+      ]
+    },
+    {
+      "id": "home_004",
+      "name": "Chemical Inhalation in Bathroom or Kitchen",
+      "keywords": [
+        "cleaning fumes",
+        "chemical inhalation",
+        "chlorine gas"
+      ],
+      "description": "Breathing in fumes from cleaning agents or mixed chemicals",
+      "notes": "Never mix bleach with acids or ammonia due to toxic gas formation",
+      "steps": [
+        "Move person immediately to area with fresh air",
+        "Open doors and windows if safe to ventilate room",
+        "Have person sit upright and breathe slowly",
+        "Remove contaminated clothing if strong fumes absorbed",
+        "Seek medical care if cough, chest tightness or breathing difficulty persists"
+      ]
+    },
+    {
+      "id": "home_005",
+      "name": "Minor Eye Irritation from Soap or Shampoo",
+      "keywords": [
+        "soap in eye",
+        "shampoo in eye",
+        "eye irritation"
+      ],
+      "description": "Stinging and watering of eyes after accidental exposure to mild detergents",
+      "notes": "Usually resolves with thorough rinsing",
+      "steps": [
+        "Rinse eye with clean lukewarm water for several minutes",
+        "Ask person to blink frequently during rinsing",
+        "Avoid rubbing eyes",
+        "Remove contact lenses if present and easily removable",
+        "Seek eye care if pain, redness or blurred vision persists"
+      ]
+    },
+
+    {
+      "id": "travel_001",
+      "name": "Motion Sickness",
+      "keywords": [
+        "motion sickness",
+        "travel nausea",
+        "car sick"
+      ],
+      "description": "Nausea and dizziness triggered by travel in car, bus, boat or plane",
+      "notes": "Often improves when motion stops or visual input changes",
+      "steps": [
+        "Have person face forward and look at stable horizon point",
+        "Encourage fresh air by opening window or using fan",
+        "Offer small sips of water",
+        "Avoid heavy meals, alcohol or reading during travel",
+        "Use prescribed or over‑the‑counter motion sickness remedies as directed"
+      ]
+    },
+    {
+      "id": "travel_002",
+      "name": "Jet Lag Fatigue",
+      "keywords": [
+        "jet lag",
+        "time zone change",
+        "travel fatigue"
+      ],
+      "description": "Sleep disturbance and fatigue after crossing time zones",
+      "notes": "Adjusting sleep schedule before travel may reduce severity",
+      "steps": [
+        "Encourage exposure to natural light during daytime at destination",
+        "Promote hydration and light meals",
+        "Avoid excessive caffeine and alcohol",
+        "Advise short naps rather than long daytime sleep",
+        "Seek medical advice if severe sleep problems persist"
+      ]
+    },
+    {
+      "id": "travel_003",
+      "name": "Deep Vein Thrombosis Prevention During Travel",
+      "keywords": [
+        "DVT prevention",
+        "long flight",
+        "leg clot"
+      ],
+      "description": "Measures to reduce risk of blood clots in legs during long journeys",
+      "notes": "High‑risk individuals should follow doctor’s advice before travel",
+      "steps": [
+        "Encourage leg movement and walking every 1‑2 hours if possible",
+        "Perform ankle circles and calf stretches while seated",
+        "Avoid tight clothing around waist and legs",
+        "Stay well hydrated with water",
+        "Seek medical advice for persistent leg swelling, pain or redness after travel"
+      ]
+    },
+    {
+      "id": "travel_004",
+      "name": "Altitude Sickness (Mild)",
+      "keywords": [
+        "altitude sickness",
+        "mountain sickness",
+        "high altitude"
+      ],
+      "description": "Headache, nausea and fatigue after rapid ascent to high altitudes",
+      "notes": "Can progress to serious brain or lung swelling if ignored",
+      "steps": [
+        "Rest and avoid further ascent until symptoms improve",
+        "Encourage drinking water and avoiding alcohol",
+        "Offer light, high‑carbohydrate meals",
+        "Consider using approved medications if previously prescribed",
+        "Descend to lower altitude and seek medical care if symptoms worsen or do not improve"
+      ]
+    },
+    {
+      "id": "travel_005",
+      "name": "Insect Bites While Traveling (Prevention and Care)",
+      "keywords": [
+        "mosquito bites",
+        "travel bites",
+        "insect prevention"
+      ],
+      "description": "Itchy or painful bites from mosquitoes or other insects during travel",
+      "notes": "In some regions bites may transmit diseases like malaria or dengue",
+      "steps": [
+        "Use insect repellent according to instructions",
+        "Wear long sleeves and trousers, especially at dawn and dusk",
+        "Sleep under insecticide‑treated bed nets where appropriate",
+        "Clean bites with soap and water and avoid scratching",
+        "Seek medical care if fever, rash or body pain occurs after bites"
+      ]
+    }
+  ]
+}
