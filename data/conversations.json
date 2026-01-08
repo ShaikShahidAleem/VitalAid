@@ -1,0 +1,214 @@
+[
+  {
+    "user_input": "person collapsed and has no pulse",
+    "bot_response": "This sounds like a cardiac emergency. Call emergency services immediately. Check for breathing and pulse. If no pulse, start CPR immediately. Place hands on center of chest, push hard and fast at least 2 inches deep, allow chest to fully recoil. Give 30 compressions followed by 2 rescue breaths if trained."
+  },
+  {
+    "user_input": "someone is unconscious and not breathing",
+    "bot_response": "This is a life-threatening emergency. Call emergency services immediately. If they have no pulse and are not breathing, start CPR. Give 30 chest compressions at 100-120 per minute, then 2 rescue breaths. Continue until help arrives or they start breathing."
+  },
+  {
+    "user_input": "heart attack emergency help needed",
+    "bot_response": "Heart attack is a medical emergency. Call emergency services immediately. Have the person sit down, rest, and try to stay calm. Loosen tight clothing. If they become unconscious, start CPR. Give aspirin if available and not allergic. Do not give anything by mouth if unconscious."
+  },
+  {
+    "user_input": "how to perform CPR chest compressions",
+    "bot_response": "CPR steps: 1) Call emergency services. 2) Place heel of hand on center of chest between nipples. 3) Place other hand on top, fingers interlaced. 4) Push hard and fast at least 2 inches deep. 5) Allow complete chest recoil. 6) Give 30 compressions at 100-120 per minute. 7) Give 2 rescue breaths if trained. 8) Repeat cycles."
+  },
+  {
+    "user_input": "someone is choking and cannot breathe",
+    "bot_response": "Choking is an emergency. For adults: Perform abdominal thrusts (Heimlich maneuver). Stand behind person, place arms around waist, make fist above navel, grasp fist with other hand, pull inward and upward sharply. For infants: Give 5 back blows then 5 chest thrusts. Call emergency services if unsuccessful."
+  },
+  {
+    "user_input": "how to help choking person",
+    "bot_response": "For choking: 1) Ask 'Are you choking?' 2) If they can't speak, cough, or breathe, call emergency services. 3) For adults: Heimlich maneuver - stand behind, arms around waist, fist above navel, pull inward/upward. 4) For infants: 5 back blows then 5 chest thrusts. 5) Continue until object removed or person unconscious."
+  },
+  {
+    "user_input": "airway blocked emergency help",
+    "bot_response": "Airway obstruction is critical. If person can't speak or breathe: 1) Call emergency services. 2) For adults: Heimlich maneuver - stand behind, place fist above navel, grasp with other hand, pull inward and upward sharply. 3) For infants: 5 back blows then 5 chest thrusts. 4) Check mouth for visible object. 5) Continue until help arrives."
+  },
+  {
+    "user_input": "heimlich maneuver how to perform",
+    "bot_response": "Heimlich maneuver steps: 1) Stand behind the person. 2) Place arms around their waist. 3) Make a fist with one hand, place it just above the navel. 4) Grasp the fist with your other hand. 5) Pull inward and upward sharply. 6) Repeat until object is expelled or person becomes unconscious. 7) If unconscious, begin CPR."
+  },
+  {
+    "user_input": "heavy bleeding from cut wound",
+    "bot_response": "Severe bleeding is life-threatening. Apply direct pressure with clean cloth or gauze on the wound. Elevate the injured area above heart level if possible. Do not remove cloth if blood soaks through - add more on top. Call emergency services for severe bleeding. Monitor for shock - keep person warm and calm."
+  },
+  {
+    "user_input": "how to stop bleeding emergency",
+    "bot_response": "To control bleeding: 1) Apply direct pressure with clean cloth or gauze. 2) Maintain steady pressure for 10-15 minutes. 3) Elevate wound above heart if possible. 4) If severe, apply pressure to pressure points. 5) Do not remove cloth if blood soaks through - add more. 6) Call emergency services. 7) Treat for shock."
+  },
+  {
+    "user_input": "wound bleeding heavily what to do",
+    "bot_response": "Heavy bleeding requires immediate action: 1) Call emergency services. 2) Apply firm direct pressure with clean cloth. 3) Elevate injured area above heart. 4) If bleeding continues, apply pressure to arterial pressure points. 5) Do not remove blood-soaked cloth. 6) Keep person lying down to prevent shock. 7) Monitor breathing and consciousness."
+  },
+  {
+    "user_input": "person burned by fire or hot object",
+    "bot_response": "For burns: 1) Cool burn with cool (not cold) running water for 10-20 minutes. 2) Remove jewelry before swelling occurs. 3) Do not apply ice, butter, or home remedies. 4) Do not break blisters. 5) Cover with sterile non-stick dressing. 6) Call emergency services for severe burns or if face, hands, feet, or genitals affected."
+  },
+  {
+    "user_input": "how to treat burn injuries",
+    "bot_response": "Burn treatment: 1) Remove person from heat source. 2) Cool burn with cool running water 10-20 minutes. 3) Remove tight jewelry before swelling. 4) Cover with sterile, non-stick dressing. 5) Do not apply ice, butter, or ointments. 6) Do not break blisters. 7) Seek medical attention for large burns, face burns, or if signs of infection develop."
+  },
+  {
+    "user_input": "severe burn emergency treatment",
+    "bot_response": "Severe burns need immediate medical care: 1) Call emergency services. 2) Remove person from heat source. 3) Cool burn with cool water if possible. 4) Remove jewelry before swelling. 5) Cover with clean, dry cloth. 6) Do not remove stuck clothing. 7) Monitor breathing. 8) Treat for shock - keep warm and lying down."
+  },
+  {
+    "user_input": "suspected broken bone fracture",
+    "bot_response": "For suspected fracture: 1) Do not move the person unnecessarily. 2) Immobilize the injured area with splint if available. 3) Apply ice wrapped in cloth to reduce swelling. 4) Elevate if possible. 5) Control bleeding if present. 6) Call emergency services for severe pain, deformity, or if bone is visible. 7) Monitor for shock."
+  },
+  {
+    "user_input": "how to treat bone fracture",
+    "bot_response": "Fracture care: 1) Keep person still and calm. 2) Immobilize with splint or support. 3) Apply ice wrapped in cloth for swelling. 4) Elevate injured area. 5) Control bleeding if present. 6) Do not attempt to realign bone. 7) Seek medical attention - call emergency services for severe fractures or if circulation is compromised."
+  },
+  {
+    "user_input": "broken bone emergency care",
+    "bot_response": "Emergency fracture care: 1) Call emergency services for serious fractures. 2) Keep person still and support injured area. 3) Apply ice to reduce swelling. 4) Check for circulation and sensation beyond injury. 5) Do not move person unnecessarily. 6) Cover open fractures with sterile dressing. 7) Monitor for shock and breathing difficulties."
+  },
+  {
+    "user_input": "someone accidentally swallowed poison",
+    "bot_response": "Poisoning emergency: 1) Call poison control center immediately. 2) Do not induce vomiting unless directed. 3) Bring container/substance to hospital. 4) Keep person calm and still. 5) If unconscious, check breathing and pulse. 6) If in eyes, flush with water 15 minutes. 7) If on skin, remove contaminated clothing and wash."
+  },
+  {
+    "user_input": "chemical poisoning emergency help",
+    "bot_response": "Chemical poisoning: 1) Call poison control or emergency services. 2) Do not induce vomiting. 3) Remove person from exposure area. 4) If swallowed, rinse mouth with water. 5) If inhaled, get fresh air. 6) If on skin, remove contaminated clothing and wash. 7) Bring poison container to medical facility."
+  },
+  {
+    "user_input": "severe allergic reaction anaphylaxis",
+    "bot_response": "Anaphylaxis is life-threatening: 1) Call emergency services immediately. 2) Use epinephrine auto-injector if available. 3) Help person sit upright unless dizzy. 4) Loosen tight clothing. 5) Monitor breathing and pulse. 6) If unconscious, check airway and breathing. 7) Be prepared to perform CPR. 8) Keep person calm and still."
+  },
+  {
+    "user_input": "person having allergic reaction",
+    "bot_response": "Allergic reaction treatment: 1) Call emergency services for severe symptoms. 2) Help person sit comfortably. 3) If prescribed, help them use epinephrine auto-injector. 4) Loosen tight clothing. 5) Monitor breathing closely. 6) If symptoms worsen or face/tongue swells, it's anaphylaxis - emergency situation. 7) Be ready to perform CPR if needed."
+  },
+  {
+    "user_input": "anaphylactic shock emergency",
+    "bot_response": "Anaphylactic shock is critical: 1) Call emergency services immediately. 2) Use epinephrine auto-injector if available. 3) Help person lie flat with feet elevated unless breathing difficult. 4) Loosen tight clothing. 5) Monitor airway, breathing, pulse. 6) If stops breathing, begin CPR. 7) Stay with person until help arrives. 8) Keep calm and reassure."
+  },
+  {
+    "user_input": "person having seizure convulsion",
+    "bot_response": "Seizure care: 1) Time the seizure. 2) Do not restrain or put anything in mouth. 3) Protect head with something soft. 4) Turn on side if vomiting occurs. 5) Stay with person until fully conscious. 6) Call emergency services if seizure lasts over 5 minutes or if another seizure follows. 7) Reassure person when consciousness returns."
+  },
+  {
+    "user_input": "epileptic seizure emergency help",
+    "bot_response": "Epileptic seizure response: 1) Stay calm and time the seizure. 2) Clear area of dangerous objects. 3) Do not restrain or put hands in mouth. 4) Turn person on side if vomiting. 5) Stay with them until fully alert. 6) Call emergency services if seizure lasts >5 minutes or multiple seizures. 7) Comfort them when consciousness returns."
+  },
+  {
+    "user_input": "seizure first aid instructions",
+    "bot_response": "Seizure first aid: 1) Ease person to ground. 2) Turn on side to keep airway clear. 3) Protect head from injury. 4) Time the seizure duration. 5) Do not restrain or put objects in mouth. 6) Stay with person until recovery. 7) Call emergency if seizure >5 minutes or person injured. 8) Comfort and reassure afterward."
+  },
+  {
+    "user_input": "suspected stroke symptoms help",
+    "bot_response": "Stroke recognition - FAST test: Face drooping (ask person to smile - uneven), Arms weakness (ask to raise both arms - one drifts down), Speech difficulty (slurred or strange), Time to call emergency services immediately. Keep person calm and still. Note time symptoms started. Do not give food, water, or medication."
+  },
+  {
+    "user_input": "brain attack emergency signs",
+    "bot_response": "Stroke symptoms (FAST): Face drooping - one side of face numb or uneven smile. Arms weakness - one arm drifts down when raised. Speech difficulty - slurred or hard to understand. Time - call emergency services immediately. Keep person lying down, monitor breathing, do not give food or water. Note when symptoms started."
+  },
+  {
+    "user_input": "stroke facial drooping treatment",
+    "bot_response": "Facial drooping indicates possible stroke: 1) Use FAST test - Face, Arms, Speech, Time. 2) Call emergency services immediately. 3) Keep person calm and lying down. 4) Monitor breathing and consciousness. 5) Note exact time symptoms started. 6) Do not give food, water, or medication. 7) Be prepared to perform CPR if needed."
+  },
+  {
+    "user_input": "diabetic emergency low blood sugar",
+    "bot_response": "Low blood sugar emergency: 1) If person conscious, give sugar, honey, or glucose tablets. 2) If unconscious, do not give anything by mouth. 3) Call emergency services. 4) If trained, give glucagon injection if available. 5) Monitor breathing and consciousness. 6) When conscious, give food or drink with sugar. 7) Stay with person until help arrives."
+  },
+  {
+    "user_input": "hypoglycemic episode help",
+    "bot_response": "Hypoglycemia treatment: 1) If conscious, give sugar immediately - glucose tablets, honey, juice, regular soda. 2) If unconscious, do not give anything by mouth. 3) Call emergency services. 4) If trained, give glucagon injection. 5) Monitor consciousness and breathing. 6) When conscious, follow with protein and complex carbs."
+  },
+  {
+    "user_input": "diabetic coma emergency",
+    "bot_response": "Diabetic emergency: 1) Call emergency services immediately. 2) Check for pulse and breathing. 3) If no pulse, start CPR. 4) Do not give food or drink to unconscious person. 5) If breathing, place in recovery position. 6) Gather information about diabetes, medications, last meal. 7) Stay with person until help arrives."
+  },
+  {
+    "user_input": "difficulty breathing emergency",
+    "bot_response": "Breathing difficulty: 1) Call emergency services for severe breathing problems. 2) Help person sit upright and lean forward slightly. 3) Loosen tight clothing. 4) Encourage slow, deep breaths. 5) If they have inhaler, help them use it. 6) Monitor for worsening or stopping of breathing. 7) Be ready to perform rescue breathing or CPR."
+  },
+  {
+    "user_input": "cannot breathe properly help",
+    "bot_response": "Breathing emergency: 1) Call emergency services immediately. 2) Help person sit upright in comfortable position. 3) Loosen tight clothing around neck. 4) Encourage slow, controlled breathing. 5) If asthmatic, help with rescue inhaler. 6) Monitor breathing closely. 7) If breathing stops, begin rescue breathing immediately."
+  },
+  {
+    "user_input": "respiratory distress treatment",
+    "bot_response": "Respiratory distress: 1) Call emergency services. 2) Position person sitting upright. 3) Loosen tight clothing. 4) Encourage calm, slow breathing. 5) Help with prescribed inhaler if available. 6) Monitor for respiratory arrest. 7) If breathing stops, start rescue breathing or CPR. 8) Stay calm to help keep person calm."
+  },
+  {
+    "user_input": "asthma attack emergency",
+    "bot_response": "Asthma attack: 1) Help person sit upright and lean forward. 2) Help them use rescue inhaler if available. 3) Loosen tight clothing. 4) Encourage slow, controlled breathing. 5) Call emergency services if inhaler doesn't help. 6) Monitor for worsening or respiratory arrest. 7) Stay with person and keep them calm."
+  },
+  {
+    "user_input": "heat exhaustion from hot weather",
+    "bot_response": "Heat exhaustion: 1) Move person to cool, shaded area. 2) Remove excess clothing. 3) Cool with wet cloths and fan. 4) Give cool water to sip slowly. 5) If symptoms worsen or include confusion, call emergency services. 6) Monitor for heat stroke - dangerously high body temperature. 7) Keep person resting until fully recovered."
+  },
+  {
+    "user_input": "dehydration emergency symptoms",
+    "bot_response": "Severe dehydration: 1) Move to cool area. 2) Give small sips of water, sports drinks, or oral rehydration solution. 3) Remove excess clothing. 4) Cool with wet cloths. 5) Call emergency services for severe symptoms: confusion, rapid pulse, little/no urination. 6) Monitor for shock. 7) Continue rehydration slowly."
+  },
+  {
+    "user_input": "heat stroke prevention help",
+    "bot_response": "Heat stroke prevention: 1) Move person to air conditioning or cool shade. 2) Remove excess clothing. 3) Cool rapidly with cold water immersion or ice packs. 4) Monitor temperature and consciousness. 5) Call emergency services immediately. 6) Continue cooling until help arrives. 7) This is life-threatening - act quickly."
+  },
+  {
+    "user_input": "severe hypothermia from cold",
+    "bot_response": "Hypothermia emergency: 1) Call emergency services. 2) Move person to warm, dry area. 3) Remove wet clothes gently. 4) Warm gradually with blankets, body heat. 5) Give warm, sweet drinks if conscious. 6) Monitor breathing and pulse. 7) Do not massage extremities. 8) Handle gently to avoid cardiac arrest."
+  },
+  {
+    "user_input": "frostbite emergency treatment",
+    "bot_response": "Frostbite care: 1) Get to warm area immediately. 2) Do not rub or massage frostbitten area. 3) Warm gradually with body heat or warm (not hot) water. 4) Do not use direct heat or break blisters. 5) Wrap area in dry, sterile dressing. 6) Seek medical attention for severe cases. 7) Do not walk on frostbitten feet if possible."
+  },
+  {
+    "user_input": "cold exposure emergency",
+    "bot_response": "Cold exposure: 1) Get person to warm shelter. 2) Remove wet clothing gently. 3) Warm gradually with blankets, warm drinks. 4) Monitor for hypothermia symptoms. 5) Do not massage or rub cold skin. 6) Call emergency services for severe exposure. 7) Handle person gently - sudden movements can cause cardiac problems."
+  },
+  {
+    "user_input": "head injury concussion emergency",
+    "bot_response": "Head injury: 1) Call emergency services for serious head injury. 2) Keep person still and calm. 3) Do not move neck if spinal injury suspected. 4) Control any bleeding with direct pressure. 5) Monitor consciousness and breathing. 6) Watch for worsening headache, vomiting, confusion. 7) Do not give food, water, or pain medication."
+  },
+  {
+    "user_input": "head trauma what to do",
+    "bot_response": "Head trauma response: 1) Call emergency services for significant head injury. 2) Keep person lying down, support head and neck. 3) Control bleeding with direct pressure. 4) Monitor consciousness level. 5) Watch for worsening symptoms. 6) Do not move person unnecessarily. 7) Do not give food, water, or medication. 8) Keep person warm and still."
+  },
+  {
+    "user_input": "concussion symptoms treatment",
+    "bot_response": "Concussion care: 1) Seek medical attention for suspected concussion. 2) Keep person awake and monitor closely. 3) Apply ice to head for swelling. 4) Rest in quiet, dimly lit room. 5) Watch for worsening headache, vomiting, confusion. 6) Do not give pain medication without medical advice. 7) No sports or activities until cleared by doctor."
+  },
+  {
+    "user_input": "head wound bleeding emergency",
+    "bot_response": "Head wound: 1) Apply direct pressure with clean cloth. 2) Do not remove large objects - stabilize around them. 3) Call emergency services for deep or gaping wounds. 4) Monitor for concussion signs. 5) Keep person lying down. 6) Control bleeding while preventing shock. 7) Watch for loss of consciousness or confusion."
+  },
+  {
+    "user_input": "eye injury emergency help",
+    "bot_response": "Eye injury: 1) Do not rub the eye. 2) For chemical exposure, flush with water 15 minutes. 3) Cover both eyes to reduce movement. 4) Do not remove embedded objects. 5) Seek immediate medical attention. 6) If something in eye, do not try to remove it. 7) Keep person calm and still. 8) Cover uninjured eye to limit movement."
+  },
+  {
+    "user_input": "eye trauma what to do",
+    "bot_response": "Eye trauma: 1) Do not touch or rub the eye. 2) For chemicals, flush immediately with water. 3) Cover eye with sterile dressing. 4) Cover both eyes to limit movement. 5) Do not remove embedded objects. 6) Get immediate medical help. 7) Keep person lying down. 8) Do not give food or drink before medical evaluation."
+  },
+  {
+    "user_input": "chemical eye exposure",
+    "bot_response": "Chemical eye exposure: 1) Flush eye with clean water immediately for 15-20 minutes. 2) Hold eyelids open during flushing. 3) Remove contact lenses if they come out easily. 4) Do not rub the eye. 5) Seek immediate medical attention. 6) Bring chemical container to hospital. 7) Continue flushing until help arrives."
+  },
+  {
+    "user_input": "eye wound emergency care",
+    "bot_response": "Eye wound care: 1) Do not attempt to clean or flush the eye. 2) Cover with sterile dressing. 3) Cover both eyes to prevent movement. 4) Do not remove embedded objects. 5) Keep person calm and still. 6) Get immediate medical attention. 7) Monitor for vision changes or increased pain. 8) Do not give food or drink."
+  },
+  {
+    "user_input": "electrical shock emergency help",
+    "bot_response": "Electrical shock: 1) Do not touch the person until power source is off. 2) Turn off power or use non-conductive object to separate. 3) Call emergency services. 4) Check for breathing and pulse. 5) If no pulse, start CPR. 6) Look for burns at entry and exit points. 7) Keep person still and warm. 8) Monitor for cardiac rhythm problems."
+  },
+  {
+    "user_input": "electrocution what to do",
+    "bot_response": "Electrocution: 1) Ensure power is off before touching person. 2) If can't turn off power, use wooden broom handle to separate person from source. 3) Call emergency services immediately. 4) Check for breathing and pulse. 5) Begin CPR if no pulse. 6) Look for electrical burns. 7) Keep person still and monitor. 8) Treat for shock."
+  },
+  {
+    "user_input": "electric current injury",
+    "bot_response": "Electrical injury: 1) Do not touch victim until power is disconnected. 2) Turn off power or use non-conductive object to separate. 3) Call emergency services. 4) Check consciousness, breathing, pulse. 5) If no pulse, start CPR. 6) Examine for burns and fractures from muscle contractions. 7) Keep person warm and still. 8) Watch for delayed cardiac problems."
+  },
+  {
+    "user_input": "high voltage shock emergency",
+    "bot_response": "High voltage shock: 1) Stay back - high voltage can arc through air. 2) Turn off power if possible. 3) Call emergency services. 4) Do not approach until power is confirmed off. 5) If safe, check for breathing and pulse. 6) Begin CPR if needed. 7) Treat for electrical burns. 8) Keep person still - internal injuries possible. 9) Monitor for cardiac arrest."
+  }
+]

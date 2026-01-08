@@ -1,0 +1,6222 @@
+[
+  {
+    "text": "person collapsed and has no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "someone is unconscious and not breathing",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart attack emergency help needed",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to perform CPR chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest what to do",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "person collapsed not breathing",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency cardiac massage instructions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart stopped beating what to do",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "no breathing and no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unresponsive person cardiac emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cpr procedure for heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart attack and unconscious",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency heart massage technique",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest first aid steps",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unconscious person no breathing",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "someone is choking and cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to help choking person",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked emergency help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver how to perform",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "person choking what to do",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "cannot breathe choking emergency",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "foreign object in throat help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway obstruction what to do",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking first aid instructions",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver technique",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "someone coughing cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked emergency response",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking emergency procedure",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to clear blocked airway",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "person choking for help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heavy bleeding from cut wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to stop bleeding emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound bleeding heavily what to do",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss emergency treatment",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "severe bleeding how to control",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut with heavy bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "hemorrhage emergency help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound bleeding won't stop",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "severe cut bleeding control",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss from injury",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency bleeding control",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "heavy bleeding first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut artery bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound hemorrhage treatment",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "bleeding control techniques",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "person burned by fire or hot object",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to treat burn injuries",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "severe burn emergency treatment",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "fire burn what to do",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "hot liquid scald injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "chemical burn emergency help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn blister formation treatment",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "electrical burn emergency care",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "sunburn severe treatment",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn pain management",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn wound care instructions",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "severe burn first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn classification treatment",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn emergency response",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "hot object burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "suspected broken bone fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "how to treat bone fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone emergency care",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture splinting techniques",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "suspected fractured arm or leg",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone what to do",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture immobilization method",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone fracture first aid",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone emergency treatment",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture stabilization techniques",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "suspected spinal fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone pain management",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture emergency response",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone injury treatment",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture immobilization procedure",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "someone accidentally swallowed poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical poisoning emergency help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic ingestion what to do",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison control emergency number",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "drug overdose emergency help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "carbon monoxide poisoning symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "food poisoning severe symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical inhalation poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison antidote emergency",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic substance exposure",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "accidental poisoning treatment",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poisoning emergency response",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical burn from poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "ingested toxic substance",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison control center help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "severe allergic reaction anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "person having allergic reaction",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylactic shock emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "severe allergic response help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy attack what to do",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "swelling from allergic reaction",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "hives and difficulty breathing",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic shock emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "severe allergy attack",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylaxis symptoms treatment",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic reaction swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "food allergy emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "insect sting allergic reaction",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy medication emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "severe allergic response",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "person having seizure convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epileptic seizure emergency help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsions what to do",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure first aid instructions",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "person shaking uncontrollably",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy attack emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure duration how long",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsion safety measures",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure aftercare treatment",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epileptic fit help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure emergency response",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsive episode care",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure protection during",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy emergency protocol",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure first aid procedure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "suspected stroke symptoms help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack emergency signs",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke facial drooping treatment",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "slurred speech stroke symptoms",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke paralysis emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain stroke what to do",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke warning signs help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "cerebrovascular accident emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "strokeFAST test procedure",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "ischemic stroke treatment",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "hemorrhagic stroke emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke patient care",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke recognition signs",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack emergency response",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke emergency protocol",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "diabetic emergency low blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "hypoglycemic episode help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic coma emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar too low help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin shock treatment",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic ketoacidosis emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic seizure from low sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood glucose emergency low",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic emergency treatment",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin reaction help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "severe hypoglycemia treatment",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic emergency signs",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar emergency high",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic emergency protocol",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin overdose emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "difficulty breathing emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "cannot breathe properly help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory distress treatment",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma attack emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "shortness of breath severe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing problems emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory failure help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "chest breathing difficulty",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma emergency inhaler",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing obstruction help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "severe breathing problems",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory emergency treatment",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "difficulty breathing first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing distress protocol",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory emergency response",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "heat exhaustion from hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration emergency symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat stroke prevention help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather illness treatment",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "severe heat exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat cramps emergency care",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration from heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun exposure emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat illness symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather safety",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat exhaustion treatment",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration emergency help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat related illness",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun exposure treatment",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat emergency protocol",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "severe hypothermia from cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite emergency treatment",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold exposure emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing temperature injury",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia symptoms help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold weather emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia warming treatment",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "exposure to cold emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing injury treatment",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "severe cold exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia emergency care",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite emergency protocol",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold weather safety",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia warming procedure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "head injury concussion emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma what to do",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion symptoms treatment",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head wound bleeding emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "severe head injury help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "brain injury emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head impact concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "skull fracture emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury monitoring",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion recovery care",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma assessment",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "severe head wound help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "brain injury treatment",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury first aid",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion emergency protocol",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "eye injury emergency help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma what to do",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "chemical eye exposure",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye wound emergency care",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision loss emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye foreign object help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye burn emergency treatment",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury first aid",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision problems emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye damage treatment",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury assessment",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "severe eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye emergency protocol",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye care emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "electrical shock emergency help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution what to do",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric current injury",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "high voltage shock emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical burn treatment",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric shock symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "lightning strike emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical injury care",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "shock from electricity",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric accident help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical emergency response",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric shock first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution treatment",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical injury protocol",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric shock safety",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "help with cardiac arrest",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for cardiac arrest",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for cardiac arrest",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle cardiac arrest",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cardiac arrest medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency cardiac arrest",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent cardiac arrest help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart stopped emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart stopped symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart stopped first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "heart stopped medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency heart stopped",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent heart stopped help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "no pulse emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "no pulse symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "no pulse first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "no pulse medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency no pulse",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent no pulse help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with unresponsive",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for unresponsive",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unresponsive emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for unresponsive",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle unresponsive",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unresponsive symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unresponsive first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "unresponsive medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency unresponsive",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent unresponsive help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with cpr",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for cpr",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cpr emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for cpr",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle cpr",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cpr symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cpr first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "cpr medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency cpr",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent cpr help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "what to do for chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "chest compressions emergency",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "treatment for chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "how to handle chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "chest compressions symptoms",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "chest compressions first aid",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "chest compressions medical help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "emergency chest compressions",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "urgent chest compressions help",
+    "label": 0,
+    "category": "cardiac_arrest"
+  },
+  {
+    "text": "help with choking",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "what to do for choking",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking emergency",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "treatment for choking",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to handle choking",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking symptoms",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking first aid",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "choking medical help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "emergency choking",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "urgent choking help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "help with cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "what to do for cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "cannot breathe emergency",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "treatment for cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to handle cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "cannot breathe symptoms",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "cannot breathe first aid",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "cannot breathe medical help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "emergency cannot breathe",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "urgent cannot breathe help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "help with airway blocked",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "what to do for airway blocked",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked emergency",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "treatment for airway blocked",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to handle airway blocked",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked symptoms",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked first aid",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "airway blocked medical help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "emergency airway blocked",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "urgent airway blocked help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "help with heimlich maneuver",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "what to do for heimlich maneuver",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver emergency",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "treatment for heimlich maneuver",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "how to handle heimlich maneuver",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver symptoms",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver first aid",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "heimlich maneuver medical help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "emergency heimlich maneuver",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "urgent heimlich maneuver help",
+    "label": 1,
+    "category": "choking"
+  },
+  {
+    "text": "help with bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "what to do for bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "bleeding emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "treatment for bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to handle bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "bleeding symptoms",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "bleeding first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "bleeding medical help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency bleeding",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "urgent bleeding help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "help with cut",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "what to do for cut",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "treatment for cut",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to handle cut",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut symptoms",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "cut medical help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency cut",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "urgent cut help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "help with wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "what to do for wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "treatment for wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to handle wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound symptoms",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "wound medical help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency wound",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "urgent wound help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "help with hemorrhage",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "what to do for hemorrhage",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "hemorrhage emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "treatment for hemorrhage",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to handle hemorrhage",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "hemorrhage symptoms",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "hemorrhage first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "hemorrhage medical help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency hemorrhage",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "urgent hemorrhage help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "help with blood loss",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "what to do for blood loss",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss emergency",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "treatment for blood loss",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "how to handle blood loss",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss symptoms",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss first aid",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "blood loss medical help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "emergency blood loss",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "urgent blood loss help",
+    "label": 2,
+    "category": "bleeding"
+  },
+  {
+    "text": "help with burn",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "what to do for burn",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn emergency",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "treatment for burn",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to handle burn",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn symptoms",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn medical help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "emergency burn",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "urgent burn help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "help with burned",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "what to do for burned",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burned emergency",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "treatment for burned",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to handle burned",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burned symptoms",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burned first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burned medical help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "emergency burned",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "urgent burned help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "help with fire",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "what to do for fire",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "fire emergency",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "treatment for fire",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to handle fire",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "fire symptoms",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "fire first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "fire medical help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "emergency fire",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "urgent fire help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "help with scald",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "what to do for scald",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "scald emergency",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "treatment for scald",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to handle scald",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "scald symptoms",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "scald first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "scald medical help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "emergency scald",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "urgent scald help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "help with burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "what to do for burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn injury emergency",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "treatment for burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "how to handle burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn injury symptoms",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn injury first aid",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "burn injury medical help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "emergency burn injury",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "urgent burn injury help",
+    "label": 3,
+    "category": "burns"
+  },
+  {
+    "text": "help with fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "what to do for fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture emergency",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "treatment for fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "how to handle fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture symptoms",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture first aid",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fracture medical help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "emergency fracture",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "urgent fracture help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "help with broken bone",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "what to do for broken bone",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone emergency",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "treatment for broken bone",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "how to handle broken bone",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone symptoms",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone first aid",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "broken bone medical help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "emergency broken bone",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "urgent broken bone help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "help with fractured",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "what to do for fractured",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fractured emergency",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "treatment for fractured",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "how to handle fractured",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fractured symptoms",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fractured first aid",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "fractured medical help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "emergency fractured",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "urgent fractured help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "help with bone broken",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "what to do for bone broken",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone broken emergency",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "treatment for bone broken",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "how to handle bone broken",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone broken symptoms",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone broken first aid",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "bone broken medical help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "emergency bone broken",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "urgent bone broken help",
+    "label": 4,
+    "category": "fracture"
+  },
+  {
+    "text": "help with poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "what to do for poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison emergency",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "treatment for poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "how to handle poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison first aid",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "poison medical help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "emergency poison",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "urgent poison help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "help with toxic",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "what to do for toxic",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic emergency",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "treatment for toxic",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "how to handle toxic",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic first aid",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "toxic medical help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "emergency toxic",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "urgent toxic help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "help with ingestion",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "what to do for ingestion",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "ingestion emergency",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "treatment for ingestion",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "how to handle ingestion",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "ingestion symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "ingestion first aid",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "ingestion medical help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "emergency ingestion",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "urgent ingestion help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "help with chemical poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "what to do for chemical poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical poisoning emergency",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "treatment for chemical poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "how to handle chemical poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical poisoning symptoms",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical poisoning first aid",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "chemical poisoning medical help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "emergency chemical poisoning",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "urgent chemical poisoning help",
+    "label": 5,
+    "category": "poisoning"
+  },
+  {
+    "text": "help with allergy",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "what to do for allergy",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "treatment for allergy",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "how to handle allergy",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy symptoms",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy first aid",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergy medical help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "emergency allergy",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "urgent allergy help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "help with anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "what to do for anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylaxis emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "treatment for anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "how to handle anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylaxis symptoms",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylaxis first aid",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "anaphylaxis medical help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "emergency anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "urgent anaphylaxis help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "help with allergic",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "what to do for allergic",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "treatment for allergic",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "how to handle allergic",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic symptoms",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic first aid",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "allergic medical help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "emergency allergic",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "urgent allergic help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "help with hives",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "what to do for hives",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "hives emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "treatment for hives",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "how to handle hives",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "hives symptoms",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "hives first aid",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "hives medical help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "emergency hives",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "urgent hives help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "help with swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "what to do for swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "swelling emergency",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "treatment for swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "how to handle swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "swelling symptoms",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "swelling first aid",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "swelling medical help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "emergency swelling",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "urgent swelling help",
+    "label": 6,
+    "category": "allergic_reaction"
+  },
+  {
+    "text": "help with seizure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "what to do for seizure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "treatment for seizure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "how to handle seizure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure symptoms",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure first aid",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "seizure medical help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "emergency seizure",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "urgent seizure help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "help with convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "what to do for convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsion emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "treatment for convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "how to handle convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsion symptoms",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsion first aid",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "convulsion medical help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "emergency convulsion",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "urgent convulsion help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "help with epilepsy",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "what to do for epilepsy",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "treatment for epilepsy",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "how to handle epilepsy",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy symptoms",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy first aid",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "epilepsy medical help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "emergency epilepsy",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "urgent epilepsy help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "help with fits",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "what to do for fits",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "fits emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "treatment for fits",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "how to handle fits",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "fits symptoms",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "fits first aid",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "fits medical help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "emergency fits",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "urgent fits help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "help with shaking",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "what to do for shaking",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "shaking emergency",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "treatment for shaking",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "how to handle shaking",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "shaking symptoms",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "shaking first aid",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "shaking medical help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "emergency shaking",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "urgent shaking help",
+    "label": 7,
+    "category": "seizure"
+  },
+  {
+    "text": "help with stroke",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "what to do for stroke",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "treatment for stroke",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "how to handle stroke",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke symptoms",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke first aid",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "stroke medical help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "emergency stroke",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "urgent stroke help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "help with brain attack",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "what to do for brain attack",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "treatment for brain attack",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "how to handle brain attack",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack symptoms",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack first aid",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "brain attack medical help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "emergency brain attack",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "urgent brain attack help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "help with paralysis",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "what to do for paralysis",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "paralysis emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "treatment for paralysis",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "how to handle paralysis",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "paralysis symptoms",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "paralysis first aid",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "paralysis medical help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "emergency paralysis",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "urgent paralysis help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "help with slurred speech",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "what to do for slurred speech",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "slurred speech emergency",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "treatment for slurred speech",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "how to handle slurred speech",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "slurred speech symptoms",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "slurred speech first aid",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "slurred speech medical help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "emergency slurred speech",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "urgent slurred speech help",
+    "label": 8,
+    "category": "stroke"
+  },
+  {
+    "text": "help with diabetic",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "what to do for diabetic",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "treatment for diabetic",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "how to handle diabetic",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic symptoms",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic first aid",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "diabetic medical help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "emergency diabetic",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "urgent diabetic help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "help with blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "what to do for blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "treatment for blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "how to handle blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar symptoms",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar first aid",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "blood sugar medical help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "emergency blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "urgent blood sugar help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "help with hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "what to do for hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "hypoglycemia emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "treatment for hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "how to handle hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "hypoglycemia symptoms",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "hypoglycemia first aid",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "hypoglycemia medical help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "emergency hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "urgent hypoglycemia help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "help with insulin",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "what to do for insulin",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin emergency",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "treatment for insulin",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "how to handle insulin",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin symptoms",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin first aid",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "insulin medical help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "emergency insulin",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "urgent insulin help",
+    "label": 9,
+    "category": "diabetic_emergency"
+  },
+  {
+    "text": "help with breathing",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "what to do for breathing",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "treatment for breathing",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "how to handle breathing",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing symptoms",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "breathing medical help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "emergency breathing",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "urgent breathing help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "help with respiratory",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "what to do for respiratory",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "treatment for respiratory",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "how to handle respiratory",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory symptoms",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "respiratory medical help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "emergency respiratory",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "urgent respiratory help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "help with asthma",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "what to do for asthma",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "treatment for asthma",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "how to handle asthma",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma symptoms",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "asthma medical help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "emergency asthma",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "urgent asthma help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "help with cannot breathe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "what to do for cannot breathe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "cannot breathe emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "treatment for cannot breathe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "how to handle cannot breathe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "cannot breathe symptoms",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "cannot breathe first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "cannot breathe medical help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "emergency cannot breathe",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "urgent cannot breathe help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "help with shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "what to do for shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "shortness of breath emergency",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "treatment for shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "how to handle shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "shortness of breath symptoms",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "shortness of breath first aid",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "shortness of breath medical help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "emergency shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "urgent shortness of breath help",
+    "label": 10,
+    "category": "breathing_difficulty"
+  },
+  {
+    "text": "help with heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "what to do for heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "treatment for heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "how to handle heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat first aid",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "heat medical help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "emergency heat",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "urgent heat help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "help with exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "what to do for exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "exhaustion emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "treatment for exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "how to handle exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "exhaustion symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "exhaustion first aid",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "exhaustion medical help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "emergency exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "urgent exhaustion help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "help with dehydration",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "what to do for dehydration",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "treatment for dehydration",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "how to handle dehydration",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration first aid",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "dehydration medical help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "emergency dehydration",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "urgent dehydration help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "help with hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "what to do for hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "treatment for hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "how to handle hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather first aid",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "hot weather medical help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "emergency hot weather",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "urgent hot weather help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "help with sun",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "what to do for sun",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun emergency",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "treatment for sun",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "how to handle sun",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun symptoms",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun first aid",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "sun medical help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "emergency sun",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "urgent sun help",
+    "label": 11,
+    "category": "heat_exhaustion"
+  },
+  {
+    "text": "help with cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "what to do for cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "treatment for cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "how to handle cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold symptoms",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "cold medical help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "emergency cold",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "urgent cold help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "help with hypothermia",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "what to do for hypothermia",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "treatment for hypothermia",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "how to handle hypothermia",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia symptoms",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "hypothermia medical help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "emergency hypothermia",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "urgent hypothermia help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "help with frostbite",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "what to do for frostbite",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "treatment for frostbite",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "how to handle frostbite",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite symptoms",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "frostbite medical help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "emergency frostbite",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "urgent frostbite help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "help with freezing",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "what to do for freezing",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "treatment for freezing",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "how to handle freezing",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing symptoms",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "freezing medical help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "emergency freezing",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "urgent freezing help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "help with exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "what to do for exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "exposure emergency",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "treatment for exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "how to handle exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "exposure symptoms",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "exposure first aid",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "exposure medical help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "emergency exposure",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "urgent exposure help",
+    "label": 12,
+    "category": "hypothermia"
+  },
+  {
+    "text": "help with head injury",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "what to do for head injury",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "treatment for head injury",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "how to handle head injury",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury symptoms",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury first aid",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head injury medical help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "emergency head injury",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "urgent head injury help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "help with concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "what to do for concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "treatment for concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "how to handle concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion symptoms",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion first aid",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "concussion medical help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "emergency concussion",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "urgent concussion help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "help with head trauma",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "what to do for head trauma",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "treatment for head trauma",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "how to handle head trauma",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma symptoms",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma first aid",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head trauma medical help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "emergency head trauma",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "urgent head trauma help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "help with head wound",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "what to do for head wound",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head wound emergency",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "treatment for head wound",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "how to handle head wound",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head wound symptoms",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head wound first aid",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "head wound medical help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "emergency head wound",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "urgent head wound help",
+    "label": 13,
+    "category": "head_injury"
+  },
+  {
+    "text": "help with eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "what to do for eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "treatment for eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "how to handle eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury symptoms",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury first aid",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye injury medical help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "emergency eye injury",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "urgent eye injury help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "help with eye damage",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "what to do for eye damage",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye damage emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "treatment for eye damage",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "how to handle eye damage",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye damage symptoms",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye damage first aid",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye damage medical help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "emergency eye damage",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "urgent eye damage help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "help with vision",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "what to do for vision",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "treatment for vision",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "how to handle vision",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision symptoms",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision first aid",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "vision medical help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "emergency vision",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "urgent vision help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "help with eye trauma",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "what to do for eye trauma",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma emergency",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "treatment for eye trauma",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "how to handle eye trauma",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma symptoms",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma first aid",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "eye trauma medical help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "emergency eye trauma",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "urgent eye trauma help",
+    "label": 14,
+    "category": "eye_injury"
+  },
+  {
+    "text": "help with electric",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "what to do for electric",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "treatment for electric",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "how to handle electric",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electric medical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "emergency electric",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "urgent electric help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "help with shock",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "what to do for shock",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "shock emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "treatment for shock",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "how to handle shock",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "shock symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "shock first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "shock medical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "emergency shock",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "urgent shock help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "help with electrocution",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "what to do for electrocution",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "treatment for electrocution",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "how to handle electrocution",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrocution medical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "emergency electrocution",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "urgent electrocution help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "help with electrical",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "what to do for electrical",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "treatment for electrical",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "how to handle electrical",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "electrical medical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "emergency electrical",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "urgent electrical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "help with current",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "what to do for current",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "current emergency",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "treatment for current",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "how to handle current",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "current symptoms",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "current first aid",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "current medical help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "emergency current",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "urgent current help",
+    "label": 15,
+    "category": "electric_shock"
+  },
+  {
+    "text": "serious emergency situation with choking",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency cannot breathe",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed airway blocked",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious heimlich maneuver case",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical choking situation",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "severe cannot breathe emergency",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with airway blocked",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of heimlich maneuver emergency",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "choking medical emergency",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response cannot breathe",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help airway blocked",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care heimlich maneuver",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical choking",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol cannot breathe",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "critical care airway blocked",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with heimlich maneuver",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency choking",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed cannot breathe",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious airway blocked case",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical heimlich maneuver situation",
+    "label": 1,
+    "category": "choking",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with bleeding",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency cut",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed wound",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious hemorrhage case",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical blood loss situation",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "severe bleeding emergency",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with cut",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of wound emergency",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "hemorrhage medical emergency",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response blood loss",
+    "label": 2,
+    "category": "bleeding",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with burn",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency burned",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed fire",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious scald case",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical burn injury situation",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "severe burn emergency",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with burned",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of fire emergency",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "scald medical emergency",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response burn injury",
+    "label": 3,
+    "category": "burns",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with fracture",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency broken bone",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed fractured",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious bone broken case",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical fracture situation",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "severe broken bone emergency",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with fractured",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of bone broken emergency",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "fracture medical emergency",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response broken bone",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help fractured",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care bone broken",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical fracture",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol broken bone",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "critical care fractured",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with bone broken",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency fracture",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed broken bone",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious fractured case",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical bone broken situation",
+    "label": 4,
+    "category": "fracture",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with poison",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency toxic",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed ingestion",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious chemical poisoning case",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical poison situation",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "severe toxic emergency",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with ingestion",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of chemical poisoning emergency",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "poison medical emergency",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response toxic",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help ingestion",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care chemical poisoning",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical poison",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol toxic",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "critical care ingestion",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with chemical poisoning",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency poison",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed toxic",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious ingestion case",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical chemical poisoning situation",
+    "label": 5,
+    "category": "poisoning",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with allergy",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed allergic",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious hives case",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical swelling situation",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "severe allergy emergency",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with anaphylaxis",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of allergic emergency",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "hives medical emergency",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response swelling",
+    "label": 6,
+    "category": "allergic_reaction",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with seizure",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency convulsion",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed epilepsy",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious fits case",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical shaking situation",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "severe seizure emergency",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with convulsion",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of epilepsy emergency",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "fits medical emergency",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response shaking",
+    "label": 7,
+    "category": "seizure",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with stroke",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency brain attack",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed paralysis",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious slurred speech case",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical stroke situation",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "severe brain attack emergency",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with paralysis",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of slurred speech emergency",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "stroke medical emergency",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response brain attack",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help paralysis",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care slurred speech",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical stroke",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol brain attack",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "critical care paralysis",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with slurred speech",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency stroke",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed brain attack",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious paralysis case",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical slurred speech situation",
+    "label": 8,
+    "category": "stroke",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with diabetic",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious insulin case",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical diabetic situation",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "severe blood sugar emergency",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of insulin emergency",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "diabetic medical emergency",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care insulin",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical diabetic",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "critical care hypoglycemia",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with insulin",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency diabetic",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed blood sugar",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious hypoglycemia case",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical insulin situation",
+    "label": 9,
+    "category": "diabetic_emergency",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with breathing",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency respiratory",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed asthma",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious cannot breathe case",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical shortness of breath situation",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "severe breathing emergency",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with respiratory",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of asthma emergency",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "cannot breathe medical emergency",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response shortness of breath",
+    "label": 10,
+    "category": "breathing_difficulty",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with heat",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed dehydration",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious hot weather case",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical sun situation",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "severe heat emergency",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with exhaustion",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of dehydration emergency",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "hot weather medical emergency",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response sun",
+    "label": 11,
+    "category": "heat_exhaustion",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with cold",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency hypothermia",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed frostbite",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious freezing case",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical exposure situation",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "severe cold emergency",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with hypothermia",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of frostbite emergency",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "freezing medical emergency",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response exposure",
+    "label": 12,
+    "category": "hypothermia",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with head injury",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency concussion",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed head trauma",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious head wound case",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical head injury situation",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "severe concussion emergency",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with head trauma",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of head wound emergency",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "head injury medical emergency",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response concussion",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help head trauma",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care head wound",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical head injury",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol concussion",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "critical care head trauma",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with head wound",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency head injury",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed concussion",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious head trauma case",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical head wound situation",
+    "label": 13,
+    "category": "head_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with eye injury",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency eye damage",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed vision",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious eye trauma case",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical eye injury situation",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "severe eye damage emergency",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with vision",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of eye trauma emergency",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "eye injury medical emergency",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response eye damage",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent immediate help vision",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "emergency care eye trauma",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious urgent medical eye injury",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent emergency protocol eye damage",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "critical care vision",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with eye trauma",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency eye injury",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed eye damage",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious vision case",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical eye trauma situation",
+    "label": 14,
+    "category": "eye_injury",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency situation with electric",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "urgent medical emergency shock",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "urgent help needed electrocution",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "serious serious electrical case",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "urgent critical current situation",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "severe electric emergency",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "serious patient with shock",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "urgent case of electrocution emergency",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "electrical medical emergency",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  },
+  {
+    "text": "serious emergency response current",
+    "label": 15,
+    "category": "electric_shock",
+    "synthetic": true
+  }
+]

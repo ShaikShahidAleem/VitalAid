@@ -1,0 +1,6 @@
+This is a placeholder for a TensorFlow Lite medical classification model.
+In a real implementation, this would be a binary .tflite file trained on medical data.
+The model should have:
+- Input shape: [1, 10000] (bag-of-words features)
+- Output shape: [1, 12] (12 medical categories)
+- Supported operations for medical text classification

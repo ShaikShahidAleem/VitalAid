@@ -1,0 +1,39 @@
+{
+  "num_classes": 16,
+  "class_names": [
+    "cardiac_arrest",
+    "choking",
+    "bleeding",
+    "burns",
+    "fracture",
+    "poisoning",
+    "allergic_reaction",
+    "seizure",
+    "stroke",
+    "diabetic_emergency",
+    "breathing_difficulty",
+    "heat_exhaustion",
+    "hypothermia",
+    "head_injury",
+    "eye_injury",
+    "electric_shock"
+  ],
+  "class_labels": {
+    "cardiac_arrest": 0,
+    "choking": 1,
+    "bleeding": 2,
+    "burns": 3,
+    "fracture": 4,
+    "poisoning": 5,
+    "allergic_reaction": 6,
+    "seizure": 7,
+    "stroke": 8,
+    "diabetic_emergency": 9,
+    "breathing_difficulty": 10,
+    "heat_exhaustion": 11,
+    "hypothermia": 12,
+    "head_injury": 13,
+    "eye_injury": 14,
+    "electric_shock": 15
+  }
+}

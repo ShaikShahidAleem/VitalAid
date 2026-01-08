@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
-import 'auth_page.dart';
 import 'services/tf_chatbot_service.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+/// Test-friendly version of MyApp that doesn't require Firebase initialization
+class TestApp extends StatelessWidget {
+  const TestApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,19 +13,17 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => TFChatbotService()),
       ],
       child: MaterialApp(
-        title: 'VitalAid',
+        title: 'VitalAid (Test)',
         theme: ThemeData(
           colorScheme:
               ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 6, 126, 239)),
         ),
-        home: const AuthPage(), // Start with AuthPage
+        home: const Scaffold(
+          body: Center(
+            child: Text('VitalAid Test App'),
+          ),
+        ),
       ),
     );
   }
-}
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(); // Initialize Firebase
-  runApp(const MyApp());
 }

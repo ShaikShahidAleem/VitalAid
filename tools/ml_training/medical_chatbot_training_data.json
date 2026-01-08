@@ -1,0 +1,2492 @@
+{
+  "categories": {
+    "emergency_cpr": 0,
+    "bleeding_control": 1,
+    "choking_airway": 2,
+    "burns_treatment": 3,
+    "fractures_injury": 4,
+    "heart_attack": 5,
+    "stroke_neurological": 6,
+    "poisoning_toxic": 7,
+    "allergic_reaction": 8,
+    "diabetic_emergency": 9,
+    "seizures_convulsions": 10,
+    "general_first_aid": 11
+  },
+  "reverse_categories": {
+    "0": "emergency_cpr",
+    "1": "bleeding_control",
+    "2": "choking_airway",
+    "3": "burns_treatment",
+    "4": "fractures_injury",
+    "5": "heart_attack",
+    "6": "stroke_neurological",
+    "7": "poisoning_toxic",
+    "8": "allergic_reaction",
+    "9": "diabetic_emergency",
+    "10": "seizures_convulsions",
+    "11": "general_first_aid"
+  },
+  "training_data": [
+    {
+      "text": "how to perform cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr steps",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cardiopulmonary resuscitation",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "what is cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to do cpr on adult",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr procedure",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "chest compressions",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "rescue breathing",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "heart stopped beating",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "person not breathing",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "unconscious person no pulse",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cardiac arrest help",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to save someone from heart attack",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr for dummies",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "emergency cpr steps",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to do mouth to mouth",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr compressions per minute",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "when to start cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr training",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr basics",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to check pulse",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "adult cpr protocol",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr ratio compressions to breaths",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "hands only cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr for healthcare providers",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr certification",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to perform rescue breaths",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr depth inches",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr hand placement",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "when to stop cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr on elderly",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr for children",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr techniques",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "basic life support",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr emergency response",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to revive someone",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr first aid",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "emergency response cpr",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr training online",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "cpr procedure steps",
+      "category": "emergency_cpr",
+      "label": 0
+    },
+    {
+      "text": "how to stop bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "control bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "stop blood loss",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "severe bleeding help",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "cut wound treatment",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to bandage wound",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "hemorrhage control",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "blood coming out",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "deep cut treatment",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to apply pressure",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "emergency bleeding control",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "wound care",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to treat cut",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "stop bleeding fast",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "bleeding from wound",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to use tourniquet",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "arterial bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "venous bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "internal bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "external bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "nosebleed treatment",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "bleeding gums",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "heavy menstrual bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to elevate wound",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "pressure points bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to wrap bandage",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "emergency wound care",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "severe bleeding first aid",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "blood loss symptoms",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to stop nosebleed",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "cuts and scrapes",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "laceration treatment",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "puncture wound",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "bleeding control techniques",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "first aid for cuts",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "emergency bandage",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to clean wound",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "wound dressing",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "bleeding emergency",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "trauma bleeding",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "how to treat hemorrhage",
+      "category": "bleeding_control",
+      "label": 1
+    },
+    {
+      "text": "someone is choking",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "how to help choking person",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking first aid",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "heimlich maneuver",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "back blows choking",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "airway obstruction",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "person can't breathe",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking emergency",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "how to clear airway",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking rescue",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "abdominal thrusts",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking infant",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking child",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking adult",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "foreign object airway",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking response",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "how to perform heimlich",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking symptoms",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "unable to speak choking",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking cough",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking treatment",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "airway management",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking prevention",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking on food",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking on object",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking response steps",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "back slap technique",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking algorithm",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "emergency choking help",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking protocols",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking first steps",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "how to save choking victim",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking rescue technique",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking emergency response",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "partial choking",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "complete choking",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking rescue procedure",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking prevention tips",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking safety",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking recovery position",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "choking aftermath",
+      "category": "choking_airway",
+      "label": 2
+    },
+    {
+      "text": "how to treat burns",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn treatment",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "first degree burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "second degree burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "third degree burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "chemical burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "electrical burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "thermal burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn first aid",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "how to cool burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn emergency",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "severe burn treatment",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn pain relief",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn blister care",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "sunburn treatment",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn dressing",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn care at home",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn infection prevention",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn healing",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn scar prevention",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn assessment",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "major burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "minor burn",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn emergency response",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn victim care",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn fluid replacement",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn shock treatment",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn inhalation injury",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn electrical injury",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn chemical injury",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn thermal injury",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn radiation injury",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn debridement",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn graft",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn reconstruction",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn rehabilitation",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn prevention",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn safety",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn first steps",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn emergency kit",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "burn medical attention",
+      "category": "burns_treatment",
+      "label": 3
+    },
+    {
+      "text": "broken bone",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture treatment",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "sprain vs fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "how to splint",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "bone fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "compound fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "simple fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture first aid",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "broken arm",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "broken leg",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "broken finger",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture care",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "how to immobilize",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture emergency",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "dislocation treatment",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "sprain treatment",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "strain treatment",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture symptoms",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "broken bone signs",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture healing",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture complications",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture reduction",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture cast",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture surgery",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture rehabilitation",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture prevention",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture types",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "stress fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "pathological fracture",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture emergency care",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture first response",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "how to support broken bone",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture pain management",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture swelling",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture bruising",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture deformity",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture medical attention",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture home care",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture exercise",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture recovery",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "fracture complications",
+      "category": "fractures_injury",
+      "label": 4
+    },
+    {
+      "text": "heart attack symptoms",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack signs",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "chest pain heart attack",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack emergency",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "myocardial infarction",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack first aid",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack treatment",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack prevention",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack warning signs",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack pain",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack women",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack men",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack medication",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack aspirin",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack nitroglycerin",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack oxygen",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack position",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack monitoring",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack recovery",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack rehabilitation",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack risk factors",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack prevention tips",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack emergency response",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack protocol",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack algorithm",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack assessment",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack diagnosis",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack complications",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack statistics",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack gender differences",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack age factors",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack lifestyle",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack diet",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack exercise",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack stress",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack smoking",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack diabetes",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack hypertension",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack cholesterol",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack family history",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "heart attack sudden death",
+      "category": "heart_attack",
+      "label": 5
+    },
+    {
+      "text": "stroke symptoms",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke signs",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke emergency",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "ischemic stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "hemorrhagic stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "mini stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "tia transient ischemic attack",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke fast",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "face drooping stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "arm weakness stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "speech difficulty stroke",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke first aid",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke treatment",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke prevention",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke recovery",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke rehabilitation",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke warning signs",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke brain attack",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke clot",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke bleeding",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke aphasia",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke paralysis",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke mobility",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke cognitive",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke communication",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke swallowing",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke consciousness",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke coma",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke death",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke prevention tips",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke risk factors",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke age",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke gender",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke race",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke family history",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke hypertension",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke diabetes",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke smoking",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke alcohol",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke diet",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke exercise",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "stroke stress",
+      "category": "stroke_neurological",
+      "label": 6
+    },
+    {
+      "text": "poisoning emergency",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison ingestion",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "chemical poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "drug overdose",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison first aid",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "how to induce vomiting",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "activated charcoal",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison control center",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "toxic ingestion",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "household poison",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "industrial poison",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "plant poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "food poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "alcohol poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "carbon monoxide poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "lead poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "mercury poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "arsenic poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "cyanide poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "pesticide poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "medicine overdose",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "accidental poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "intentional poisoning",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison symptoms",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison treatment",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison prevention",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison antidote",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison decontamination",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison elimination",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison absorption",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison distribution",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison metabolism",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison excretion",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison effects",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison organs",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison nervous system",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison cardiovascular",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison respiratory",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison digestive",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison skin",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "poison eyes",
+      "category": "poisoning_toxic",
+      "label": 7
+    },
+    {
+      "text": "allergic reaction",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "anaphylaxis",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy symptoms",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "severe allergy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "food allergy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "medication allergy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "insect sting allergy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "latex allergy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy emergency",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy treatment",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "epipen use",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy medication",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "antihistamine",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy prevention",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy testing",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy diagnosis",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy management",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy control",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy avoidance",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy triggers",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy history",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy family",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy children",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy adults",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy elderly",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy pregnancy",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy breastfeeding",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy travel",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy emergency kit",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy action plan",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy protocol",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy response",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy first aid",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy severity",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy mild",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy moderate",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy severe",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy life threatening",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy hives",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy swelling",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "allergy breathing",
+      "category": "allergic_reaction",
+      "label": 8
+    },
+    {
+      "text": "diabetic emergency",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "low blood sugar",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "high blood sugar",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "hypoglycemia",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "hyperglycemia",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetic coma",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "insulin shock",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetic ketoacidosis",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "blood glucose emergency",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes symptoms",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes treatment",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes medication",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "insulin injection",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes monitoring",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes prevention",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes management",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes control",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes education",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes diet",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes exercise",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes complications",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes type 1",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes type 2",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "gestational diabetes",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "prediabetes",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes warning signs",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes emergency signs",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes first aid",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes response",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes protocol",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes algorithm",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes assessment",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes evaluation",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes testing",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes glucose meter",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes ketone strips",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes glucagon",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes emergency kit",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes action plan",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes support",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "diabetes resources",
+      "category": "diabetic_emergency",
+      "label": 9
+    },
+    {
+      "text": "seizure emergency",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "epileptic seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure first aid",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "convulsion",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure symptoms",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure types",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "grand mal seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "petit mal seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "partial seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "generalized seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "focal seizure",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure treatment",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure medication",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure prevention",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure recovery",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure safety",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure precautions",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure triggers",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure causes",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure diagnosis",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure management",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure control",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure monitoring",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure emergency response",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure protocol",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure algorithm",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure assessment",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure evaluation",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure classification",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure duration",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure frequency",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure warning",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure aura",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure postictal",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure recovery position",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure airway",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure breathing",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure circulation",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure injury",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "seizure head trauma",
+      "category": "seizures_convulsions",
+      "label": 10
+    },
+    {
+      "text": "first aid basics",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "emergency first aid",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "basic first aid",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid kit",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid training",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid certification",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid procedures",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid techniques",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid principles",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid assessment",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid evaluation",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid response",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid priority",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid abc",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid survey",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid examination",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid treatment",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid care",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid management",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid intervention",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid stabilization",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid transport",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid hospital",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid doctor",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid ambulance",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid emergency services",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid prevention",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid safety",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid hazards",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid risks",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid complications",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid follow up",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid documentation",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid communication",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid teamwork",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid leadership",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid psychology",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid stress",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid coping",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid resources",
+      "category": "general_first_aid",
+      "label": 11
+    },
+    {
+      "text": "first aid information",
+      "category": "general_first_aid",
+      "label": 11
+    }
+  ],
+  "metadata": {
+    "total_samples": 491,
+    "categories_count": 12,
+    "description": "Medical Chatbot Training Dataset for Emergency Medical Classification"
+  }
+}

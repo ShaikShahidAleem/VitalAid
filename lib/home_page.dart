@@ -7,6 +7,7 @@ import 'profile_page.dart';
 import 'procedure_detail_screen.dart';
 import 'procedure_search_delegate.dart';
 import 'chatbot_page.dart';
+import 'graphics_diagnostics_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -190,7 +191,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         const SizedBox(height: 12),
                         _buildFeatureButton('Additional feature 2', Icons.favorite),
                         const SizedBox(height: 12),
-                        _buildFeatureButton('Additional feature 3', Icons.settings),
+                        _buildFeatureButton('Graphics Diagnostics', Icons.computer, () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const GraphicsDiagnosticsPage()),
+                          );
+                        }),
                         const SizedBox(height: 12),
                         _buildFeatureButton('Additional feature 4', Icons.info),
                         const SizedBox(height: 12),
@@ -379,7 +385,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       ),
     );
   }
-  Widget _buildFeatureButton(String text, IconData icon) {
+  Widget _buildFeatureButton(String text, IconData icon, [VoidCallback? onTap]) {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -400,7 +406,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: onTap ?? () {},
           borderRadius: BorderRadius.circular(12),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
